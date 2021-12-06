@@ -1,0 +1,19 @@
+root {
+    --color-darkest-blue: 003047;
+    --color-blue: 14b3ff;
+    --lightest-blue: e0f5ffe
+    --color-orange: f36b20
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1080px;
+}
