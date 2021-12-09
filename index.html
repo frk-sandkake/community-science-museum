@@ -19,30 +19,72 @@
     <link rel="stylesheet" href="/css/navigation.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
     <link rel="stylesheet" href="/css/index.css" />
+    <script src="/js/script.js" defer></script>
     <title>Home page | Community Science Museum</title>
   </head>
-  <body>
+  <body class="site-grid">
     <header class="header-container">
       <div class="container">
-        <nav class="header-container-items-navbar">
-          <div class="header-container-items-logo-name">
-            <a href="#"><img src="logo" alt="/images/logo.png" /></a>
-            <title>COMMUNITY SCIENCE MUSEUM</title>
+        <div class="header-container-items">
+          <div class="header-container-items-logo">
+            <a href="#"> <img src="/images/logo-brandname.svg" alt="" /> </a>
           </div>
-          <div class="header-container-items-navbar-links">
-            <ul>
-              <li><a href="#">Special Events and Exhibitions</a></li>
-              <li><a href="#">Exhibition Spaces</a></li>
-              <li><a href="#">Get Involved</a></li>
-              <li><a href="#">Visit Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+          <div class="header-container-items-primary-navigation">
+            <button id="toggle-menu" class="primary-navigation-hamburgerbtn">
+              <img
+                class="open-navigation-icon"
+                src="/images/hamburger-menu-fill.svg"
+                alt="Open menu button"
+              />
+              <img
+                class="close-navigation-icon"
+                src="/images/hamburger-menu.svg"
+                alt="Close menu button"
+              />
+              <span class="sr-only">Open main menu</span>
+            </button>
+            <nav role="main-navigation" class="primary-navigation-menu">
+              <ul id="menu-links" class="primary-navigation-menu-links">
+                <li><a class="menu-item" href="#">HOME</a></li>
+                <li><a class="menu-item" href="#">NEWS</a></li>
+                <ul class="prim-nav-submenu">
+                  <li>Visiting Professor of Aeronautics</li>
+                  <li>Night In the Museum</li>
+                  <li>Energetica</li>
+                </ul>
+                <li><a class="menu-item" href="#">EXHIBITION ZONES</a></li>
+                <li><a class="menu-item" href="#">GET INVOLVED</a></li>
+                <li><a class="menu-item" href="#">VISIT US</a></li>
+                <li><a class="menu-item" href="#">CONTACT US</a></li>
+              </ul>
+            </nav>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main-container">
+      <div class="container">
+        <section class="main-container-herobanner">
+          <h1 class="main-container-herobanner-title">
+            Explore <br />
+            Together
+          </h1>
+          <p class="main-container-herobanner-text">
+            Come join us here at Community Science Museum and get to explore
+            over 1000 different exhibits. Make science come to life with the
+            interactive exhibitions.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="container">
+        <section>
+          <p>I am footer</p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

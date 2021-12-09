@@ -1,19 +1,74 @@
-root {
-    --color-darkest-blue: 003047;
-    --color-blue: 14b3ff;
-    --lightest-blue: e0f5ffe
-    --color-orange: f36b20
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-darkest-blue: #003047;
+  --color-blue: #14b3ff;
+  --color-lightest-blue: #e0f5ff;
+  --color-orange: #f36b20;
+  --color-lightest-orange: #fdebe2;
+  --h1-h5-font: "BioRhyme", serif;
+  --h1-h5-font-settings: "zero" on, "ss02" on, "ss03" on, "ss07" on, "ss08" on,
+    "kern" off, "liga" off;
+  --link-btn-label-font: "Ubuntu", "Montserrat", sans-serif;
+  --text-font: "Poppins", "Montserrat", sans-serif;
+  --text-size: 18px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--h1-h5-font);
+  font-feature-settings: var(--h1-h5-font-settings);
+}
+
+p {
+  font-family: var(--text-font);
+  font-size: var(--text-font-size);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  color: var(--color-lightest-blue);
+}
+
+ul {
+  padding: 0;
 }
 
 .container {
-    max-width: 1080px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }

@@ -1,0 +1,15 @@
+.main-container-herobanner {
+  background-image: url(/images/kids-playing-heroimg.jpg);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+.main-container-herobanner-title {
+  margin: 0;
+  padding: 0.5rem 0;
+}

@@ -1,0 +1,88 @@
+.header-container {
+  background-color: var(--color-darkest-blue);
+}
+
+.header-container-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darkest-blue);
+  color: var(--color-orange);
+  height: auto;
+}
+
+.header-container-items-logo {
+  max-width: 55%;
+  height: auto;
+}
+
+.primary-navigation-hamburgerbtn {
+  position: absolute;
+  z-index: 100;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-navigation-icon {
+  display: none;
+}
+
+.primary-navigation-menu {
+  position: fixed;
+  transform: translateY(-110%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: var(--color-darkest-blue);
+  padding-top: 2rem;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: var(--color-lightest-blue);
+  display: block;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  text-decoration: underline;
+  color: var(--color-orange);
+}
+/*
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul, /* this is the line we add 
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+/*
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+*/
+
+.showMenu {
+  transform: translateY(0);
+}
