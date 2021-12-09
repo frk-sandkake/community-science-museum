@@ -10,11 +10,15 @@
   --color-orange: #f36b20;
   --color-lightest-orange: #fdebe2;
   --h1-h5-font: "BioRhyme", serif;
-  --h1-h5-font-settings: "zero" on, "ss02" on, "ss03" on, "ss07" on, "ss08" on,
-    "kern" off, "liga" off;
-  --link-btn-label-font: "Ubuntu", "Montserrat", sans-serif;
+  --h1-h5-font-settings: "ss02" on, "ss03" on, "ss07" on, "ss08" on, "kern" off,
+    "liga" off;
+  --link-btn-label-font: "Montserrat", sans-serif;
   --text-font: "Poppins", "Montserrat", sans-serif;
-  --text-size: 18px;
+  --text-xl: 20px;
+  --text-lrg: 18px;
+  --text-med: 16px;
+  --text-sml: 14px;
+  --text-xs: 12px;
 }
 
 * {
@@ -34,11 +38,13 @@ h5,
 h6 {
   font-family: var(--h1-h5-font);
   font-feature-settings: var(--h1-h5-font-settings);
+  margin: 0;
+  padding: 0;
 }
 
 p {
   font-family: var(--text-font);
-  font-size: var(--text-font-size);
+  font-size: var(--text-lrg);
 }
 
 img {

@@ -1,15 +1,44 @@
 .main-container-herobanner {
-  background-image: url(/images/kids-playing-heroimg.jpg);
-  position: absolute;
-  z-index: 1;
-  width: 100%;
+  background: linear-gradient(
+      40deg,
+      rgba(0, 0, 0, 0.719),
+      rgba(10, 10, 10, 0.294),
+      rgba(255, 255, 255, 0)
+    ),
+    url(/images/kids-playing-heroimg.jpg);
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: left;
-  padding: 0.5rem 1rem;
+  background-position: center;
+}
+
+.main-container-herobanner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  padding: 1.3rem;
+  color: var(--color-lightest-blue);
 }
 
 .main-container-herobanner-title {
-  margin: 0;
-  padding: 0.5rem 0;
+  font-weight: 600;
+  font-style: normal;
+  text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.918);
+  width: 100%;
+  letter-spacing: 0.2rem;
+}
+
+.h1-sec-line {
+  padding-left: 1.5rem;
+}
+
+.main-container-herobanner-subtitle {
+  font-family: var(--link-btn-label-font);
+  font-size: var(--text-med);
+  font-weight: 500;
+  width: 230px;
+  line-height: 1.35rem;
+  text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.918);
 }
