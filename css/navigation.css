@@ -1,7 +1,0 @@
-.header-container-items-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-darkest-blue);
-  color: var(--color-orange);
-}

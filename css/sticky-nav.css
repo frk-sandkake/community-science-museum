@@ -1,0 +1,16 @@
+.main-container-sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.main-container-sticky-nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container-sticky-nav ul li {
+  border: solid 1px var(--color-darkest-blue);
+  background-color: var(--color-blue);
+  padding: 0.5rem;
+}

@@ -1,20 +1,6 @@
-.header-container {
-  background-color: var(--color-darkest-blue);
-}
-
 .header-container-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-darkest-blue);
-  color: var(--color-orange);
-  height: auto;
-}
-
-.header-container-items-logo {
-  max-width: 55%;
-  height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .primary-navigation-hamburgerbtn {
@@ -23,8 +9,15 @@
   top: 0.5rem;
   right: 0.5rem;
   background-color: transparent;
+  width: 3rem;
+  height: 3rem;
   border: none;
   cursor: pointer;
+}
+
+.primary-navigation-hamburgerbtn:focus,
+.close-navigation-icon:focus {
+  color: var(--color-lightest-blue);
 }
 
 .close-navigation-icon {
@@ -52,36 +45,12 @@
   font-size: 1.8rem;
 }
 
-.menu-item:hover,
-.menu-item:focus {
-  text-decoration: underline;
-  color: var(--color-orange);
-}
-/*
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
+.primary-navigation-menu > ul li ul {
   display: none;
 }
-
-ul li:hover > ul,
-ul li:focus-within > ul, /* this is the line we add 
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
+.primary-navigation-menu > ul li:hover ul {
   display: block;
 }
-/*
-ul li ul li {
-  clear: both;
-  width: 100%;
-}
-*/
 
 .showMenu {
   transform: translateY(0);

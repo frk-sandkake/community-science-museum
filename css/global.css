@@ -9,8 +9,16 @@
   --color-lightest-blue: #e0f5ff;
   --color-orange: #f36b20;
   --color-lightest-orange: #fdebe2;
+  --gradient-blue-green: linear-gradient(
+    280deg,
+    #010728,
+    #003e66,
+    #0078a0,
+    #00b8cd,
+    #19fae8
+  );
   --h1-h5-font: "BioRhyme", serif;
-  --h1-h5-font-settings: "ss02" on, "ss03" on, "ss07" on, "ss08" on, "kern" off,
+  --h1-h5-font-variant: "ss02" on, "ss03" on, "ss07" on, "ss08" on, "kern" off,
     "liga" off;
   --link-btn-label-font: "Montserrat", sans-serif;
   --text-font: "Poppins", "Montserrat", sans-serif;
@@ -21,13 +29,21 @@
   --text-xs: 12px;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.header-container,
+footer {
+  background: var(--color-darkest-blue);
+  color: var(--color-lightest-orange);
 }
 
 h1,
@@ -37,7 +53,7 @@ h4,
 h5,
 h6 {
   font-family: var(--h1-h5-font);
-  font-feature-settings: var(--h1-h5-font-settings);
+  font-variant: var(--h1-h5-font-variant);
   margin: 0;
   padding: 1rem 0;
 }
@@ -45,11 +61,15 @@ h6 {
 p {
   font-family: var(--text-font);
   font-size: var(--text-lrg);
+  font-weight: 300;
+  line-height: 1.35;
 }
 
 img {
   width: 100%;
-  height: auto;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 li {
@@ -62,9 +82,31 @@ ul {
   padding: 0;
 }
 
+.link-to-new-page {
+  font-family: var(--link-btn-label-font);
+  font-weight: 400;
+  color: var(--color-lightest-orange);
+  background-color: var(--color-darkest-blue);
+  border-radius: 5rem;
+  text-align: center;
+  display: inherit;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+a:hover,
+a:focus,
+summary:hover,
+summary:focus,
+.menu-item:hover,
+.menu-item:focus {
+  text-decoration: underline;
+  color: var(--color-orange);
+}
+
 .container {
   max-width: 1080px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
 }
 

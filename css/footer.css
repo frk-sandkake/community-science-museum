@@ -1,0 +1,60 @@
+.footer-container-visit-us {
+  padding-top: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+details {
+  padding-bottom: 1rem;
+}
+
+details[open] summary ~ * {
+  animation: open 0.3s ease in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem;
+  border-top: 1px solid var(--color-lightest-blue);
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::after {
+  content: "+";
+  color: var(--color-lightest-blue);
+  position: absolute;
+  font-size: 1.75rem;
+  font-weight: 200;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+}
+
+details p {
+  font-size: var(--text-med);
+  width: 100%;
+}
