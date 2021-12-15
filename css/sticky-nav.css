@@ -1,16 +1,24 @@
-.main-container-sticky-nav {
+.main-container-page-nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 0;
+  overflow-x: auto;
 }
 
-.main-container-sticky-nav ul {
+.main-container-page-nav ul {
   display: flex;
   flex-direction: row;
 }
 
-.main-container-sticky-nav ul li {
+.main-container-page-nav ul li {
   border: solid 1px var(--color-darkest-blue);
   background-color: var(--color-blue);
   padding: 0.5rem;
+  flex-basis: content;
+  flex-shrink: 0;
+}
+
+.main-container-page-nav ul li a {
+  display: block;
 }

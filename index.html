@@ -9,13 +9,12 @@
       content="Home page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. 
        Check out new events and exhibitions. Guided tours, special clubs for young people, contact us for arrangements for your school. Donate, volunteer, internship."
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" 
+    integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -26,9 +25,9 @@
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/hero-banner.css">
     <link rel="stylesheet" href="/css/sticky-nav.css">
     <link rel="stylesheet" href="/css/index.css" />
-
     <title>Home page | Community Science Museum</title>
   </head>
   <body class="site-grid">
@@ -196,21 +195,21 @@
               Together
             </h1>
             <p class="main-container-herobanner-subtitle">
-              At the Museum you can make history and science come to life.
+              Make science come to life!
             </p>
           </header>
         </section>
-        <nav class="main-container-sticky-nav">
+        <nav aria-label="page-navigation" class="main-container-page-nav">
           <ul>
-            <li>News</li>
-            <li>Kids</li>
-            <li>Schools</li>
-            <li>Get Involved</li>
-            <li>Visit us</li>
-            <li>To top</li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#kids">Kids</a></li>
+            <li><a href="#schools">Schools</a></li>
+            <li><a href="#get-involved">Get Involved</a></li>
+            <li><a href="#visit-us">Visit us</a></li>
+            <li><a href="#top">To top</a></li>
           </ul>
         </nav>
-        <section class="main-container-news">
+        <section id="news" class="main-container-news">
           <h2>Don't miss out!</h2>
           <div class="main-container-news-cards">
             <div class="card-container">
@@ -236,7 +235,7 @@
             >Get to our special events</a
           >
         </section>
-        <article class="main-container-kids">
+        <article id="kids" class="main-container-kids">
           <header class="main-container-kids-header">
             <h2>Are you a young person</h2>
             <p>Looking to learn more about science?</p>
@@ -267,7 +266,7 @@
             </p>
           </section>
         </article>
-        <article class="main-container-school">
+        <article id="schools" class="main-container-school">
           <h2>School</h2>
           <p>
             We want to create a place of learning and exploring for school
@@ -282,16 +281,12 @@
             >Contact us to plan your visit</a>.
           </a>
         </article>
-        <section class="main-container-exhibitions">
+        <section id="exhibitions" class="main-container-exhibitions">
           <h2>Our Exhibitions</h2>
         </section>
-        <article class="main-container-get-involved">
+        <article id="get-involved" class="main-container-get-involved">
           <section>
             <h2>Get Involved</h2>
-            <p>
-              Here at the museum we wish to get close to our community. We’ve
-              therefor made even more ways for you to interact with us.
-            </p>
             <p>
               Do you have something you would like to share with the museum and
               its visitors. It could be time, money or exiting collections. Or
@@ -309,7 +304,7 @@
     </main>
     <footer class="footer-container">
       <div class="container">
-        <section class="footer-container-visit-us">
+        <section id="visit-us" class="footer-container-visit-us">
           <h2>Visit Us</h2>
           <details>
             <summary>ADMISSION</summary>

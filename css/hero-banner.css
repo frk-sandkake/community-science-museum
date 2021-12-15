@@ -1,0 +1,26 @@
+.main-container-herobanner {
+  height: 40vh;
+  margin-bottom: 1rem;
+}
+
+.main-container-herobanner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 100%;
+  color: var(--color-lightest-blue);
+}
+
+.main-container-herobanner-title {
+  text-align: left;
+}
+
+.main-container-herobanner-subtitle {
+  font-family: var(--link-btn-label-font);
+  font-size: var(--text-med);
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}

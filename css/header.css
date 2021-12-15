@@ -42,12 +42,12 @@
   color: var(--color-lightest-blue);
   display: block;
   padding: 0.5rem;
-  font-size: 1.8rem;
 }
 
 .primary-navigation-menu > ul li ul {
   display: none;
 }
+
 .primary-navigation-menu > ul li:hover ul {
   display: block;
 }

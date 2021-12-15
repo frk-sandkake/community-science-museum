@@ -54,37 +54,80 @@ h5,
 h6 {
   font-family: var(--h1-h5-font);
   font-variant: var(--h1-h5-font-variant);
+  font-weight: 400;
   margin: 0;
-  padding: 1rem 0;
+  padding: 0.5rem 1rem;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  text-transform: capitalize;
+  line-height: 2.8rem;
 }
 
 p {
   font-family: var(--text-font);
-  font-size: var(--text-lrg);
+  font-size: var(--text-med);
   font-weight: 300;
   line-height: 1.35;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  max-width: 70ch;
+}
+
+a,
+button,
+label {
+  font-family: var(--link-btn-label-font);
+  font-size: var(--text-med);
+  font-weight: 500;
+  letter-spacing: 0.07rem;
 }
 
 img {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   object-fit: cover;
   object-position: center;
 }
 
+@media screen and (mix-width: 600px) {
+  p {
+    font-size: var(--text-lrg);
+    font-weight: 300;
+    line-height: 1.35;
+  }
+
+  a,
+  button,
+  label {
+    font-family: var(--link-btn-label-font);
+    font-size: var(--text-lrg);
+    font-weight: 600;
+  }
+
+  img {
+    height: 40vh;
+  }
+}
+
 li {
+  font-family: var(--link-btn-label-font);
+  font-size: var(--text-med);
+  font-weight: 300;
+  letter-spacing: 0.056rem;
   list-style: none;
   text-align: center;
-  color: var(--color-lightest-blue);
 }
 
 ul {
+  margin: 0;
   padding: 0;
 }
 
 .link-to-new-page {
-  font-family: var(--link-btn-label-font);
-  font-weight: 400;
   color: var(--color-lightest-orange);
   background-color: var(--color-darkest-blue);
   border-radius: 5rem;
