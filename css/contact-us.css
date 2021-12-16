@@ -1,0 +1,47 @@
+.main-container {
+  flex-direction: row;
+  background-image: linear-gradient(
+    to right top,
+    #120a42,
+    #240d49,
+    #340f4f,
+    #441055,
+    #54125a,
+    #6e165e,
+    #871c60,
+    #9f2661,
+    #c13e5d,
+    #dc5b57,
+    #ef7c51,
+    #fba04f
+  );
+}
+
+.main-container-form {
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.main-container-fieldset {
+  flex-direction: column;
+}
+.time-date-picker {
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+
+label,
+legend {
+  color: #fceefa;
+}
+
+input,
+select,
+:placeholder-shown {
+  background-color: #fceefa;
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  font-family: var(--link-btn-label-font);
+  font-size: var(--text-sml);
+  font-weight: 400;
+}

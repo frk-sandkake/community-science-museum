@@ -1,57 +1,70 @@
-.header-container-items {
-  position: relative;
-  z-index: 1;
+.primary-navigation {
+  background-color: var(--color-darkest-blue);
 }
 
-.primary-navigation-hamburgerbtn {
-  position: absolute;
-  z-index: 100;
-  top: 0.5rem;
-  right: 0.5rem;
-  background-color: transparent;
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  cursor: pointer;
-}
-
-.primary-navigation-hamburgerbtn:focus,
-.close-navigation-icon:focus {
-  color: var(--color-lightest-blue);
-}
-
-.close-navigation-icon {
-  display: none;
-}
-
-.primary-navigation-menu {
-  position: fixed;
-  transform: translateY(-110%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: var(--color-darkest-blue);
-  padding-top: 2rem;
-}
-
-.menu-item {
+.primary-navigation a {
+  color: var(--color-lightest-orange);
   text-decoration: none;
-  color: var(--color-lightest-blue);
-  display: block;
-  padding: 0.5rem;
 }
 
-.primary-navigation-menu > ul li ul {
-  display: none;
+.primary-navigation a:hover,
+.primary-navigation a:focus {
+  text-decoration: underline;
+  color: var(--color-orange);
 }
 
-.primary-navigation-menu > ul li:hover ul {
-  display: block;
+.primary-navigation {
+  position: fixed;
+  z-index: 1000;
+  inset: 0 0 0 0;
+  padding: min(20rem, 15vh) 2rem;
+  margin: 0;
+  flex-direction: column;
+  transform: translateY(-110%);
+  transition: transform 500ms ease-in-out;
 }
 
-.showMenu {
+.primary-navigation[data-visible="true"] {
   transform: translateY(0);
+}
+
+.primary-navigation a > .active {
+  border: 0;
+}
+
+.primary-navigation > li ul {
+  display: none;
+  padding: 0.5rem 0;
+}
+
+.primary-navigation > li ul li {
+  padding: 0.5rem 0;
+}
+
+.primary-navigation > li:hover ul {
+  display: block;
+}
+
+.nav-toggle {
+  display: block;
+  position: absolute;
+  z-index: 2000;
+  right: 1rem;
+  top: 1.5rem;
+  background: transparent;
+  background-image: url(/images/nav-btn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  aspect-ratio: 1;
+  border: 0;
+}
+
+.nav-toggle[aria-expanded="true"] {
+  background-image: url(/images/nav-btn-close.svg);
+}
+
+.nav-toggle:focus-visible {
+  outline: 1px solid var(--color-lightest-orange);
+  outline-offset: 1px;
 }

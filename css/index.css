@@ -4,7 +4,7 @@
       rgba(0, 0, 0, 0.911),
       rgba(37, 37, 37, 0.322)
     ),
-    url(/images/kids-playing-heroimg.jpg);
+    url(/images/kids-playing-heroimg.webp);
   background-size: cover;
   background-position: center top 20%;
 }
@@ -21,7 +21,6 @@
 .main-container-herobanner-subtitle {
   line-height: 1.4rem;
   letter-spacing: 0.1rem;
-  text-align: center;
 }
 
 .main-container-news {

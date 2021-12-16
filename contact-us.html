@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Home page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. 
+      content="Contact page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. 
        Check out new events and exhibitions. Guided tours, special clubs for young people, contact us for arrangements for your school. Donate, volunteer, internship."
     />
     <link
@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/hero-banner.css" />
-    <link rel="stylesheet" href="/css/get-involved.css" />
-    <title>Get Involved | Community Science Museum</title>
+    <link rel="stylesheet" href="/css/contact-us.css" />
+    <title>Contact page | Community Science Museum</title>
     <script src="/script.js" defer></script>
   </head>
   <body class="site-grid">
@@ -115,79 +115,80 @@
             data-visible="false"
             class="primary-navigation flex"
           >
-            <li class="active"><a href="#">HOME</a></li>
+            <li class="active"><a href="/index.html">HOME</a></li>
             <li><a href="#">NEWS</a></li>
             <li><a href="#">EXHIBITIONS</a></li>
             <li><a href="/get-involved.html">GET INVOLVED</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="/contact-us.html">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main-container">
       <div class="container">
-        <section class="main-container-herobanner">
-          <header class="main-container-herobanner-content flex">
-            <h1 class="main-container-herobanner-title">Ways to</h1>
-            <p class="main-container-herobanner-subtitle">
-              Get Involved with us & our affiliates:
-            </p>
+        <section class="main-container-aside">
+          <header class="main-container-herobanner-content">
+            <h1 class="main-container-herobanner-title">Contact Us</h1>
           </header>
         </section>
-        <article class="main-container-get-involved flex">
-          <div class="main-container-get-involved-items flex">
-            <section class="main-container-get-involved-item background-color1">
-              <h2>Support</h2>
-              <p>
-                There are various ways you can support the museum. Donations are
-                very welcome and are an important way we keep this museum open
-                and accessible to the whole community.
-              </p>
-              <p>
-                If you should have some item or collection that you think others
-                would enjoy, we would love to display it here at the Museum!
-              </p>
-            </section>
-            <section class="main-container-get-involved-item background-color2">
-              <h2>Volunteer</h2>
-              <p>
-                As a voleenter, you assist in a number of exhibithions. You get
-                to see behind the scenes and can partake in, staff-only,
-                lectures.
-              </p>
-              <p>
-                Once a month you'll join the strategie-lunch, where we all
-                (voleenters involved) discuss ideas for future exhibits and
-                strategies for the museum.
-              </p>
-            </section>
-          </div>
-          <div class="main-container-get-involved-items flex">
-            <section class="main-container-get-involved-item background-color3">
-              <h2>Internship</h2>
-              <p>
-                Do you enjoy the fun and excitement of sharing the wonders of
-                science with people? Then you could be the right person an
-                internship at the museum.
-              </p>
-              <p>
-                You’ll be learning from a number of different academics and
-                people who are passionate about science and sharing it with the
-                wider community.
-              </p>
-            </section>
-            <section class="main-container-get-involved-item background-color4">
-              <h2>Research</h2>
-              <p>
-                Are you looking to get involved with our team of researchers and
-                academics? Our museum offers various ways for you to contribute
-                towards them. Our online records and laboratory space are top of
-                the line. We also collaborate with several universities around
-                the country.
-              </p>
-            </section>
-          </div>
-        </article>
+        <form class="main-container-form flex" action="get">
+          <fieldset class="main-container-fieldset flex">
+            <legend><h2>Your Name</h2></legend>
+            <label for="first-name">First Name</label>
+            <input
+              id="first-name"
+              type="text"
+              name="first"
+              placeholder="First Name"
+            />
+            <label for="last-name">Last Name</label>
+            <input
+              id="last-name"
+              type="text"
+              name="last"
+              placeholder="Last Name"
+            />
+          </fieldset>
+          <fieldset class="main-container-fieldset flex">
+            <legend><h2>How can we help you?</h2></legend>
+            <label for="select-topic">Select topic</label>
+            <select name="select" id="select-topic">
+              <option value=""></option>
+            </select>
+            <label for="txtboxMultiline">Your Message</label>
+            <textarea
+              name="message"
+              id="txtboxMultiline"
+              required
+              cols="20"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </fieldset>
+          <fieldset class="main-container-fieldset flex">
+            <legend><h2>When & how can we reach you?</h2></legend>
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+            />
+            <label for="phone">Phone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="phone"
+              placeholder="+47 456 78 901"
+            />
+            <div class="time-date-picker flex">
+              <label for="date-time">Perferred time to call</label>
+              <input id="date" name="date" type="date" />
+              <input id="time" name="time" type="time" />
+            </div>
+          </fieldset>
+          <input type="submit" />
+        </form>
       </div>
     </main>
     <footer class="footer-container">
@@ -202,14 +203,22 @@
               leave every whole hour. Send us a message for groups of 6 people
               or more.
             </p>
-            <a class="link-to-new-page" href="#"> Contact us </a>
+            <a class="link-to-new-page" href="#">
+              Contact us
+              <span class="sr-only"
+                >for guided tours of 6 people or more people</span
+              >>
+            </a>
           </details>
           <details>
             <summary>ACCESSIBILITY</summary>
             <p>
               The museum has wheelchair accessibility ramps. It also has audio
               guides and braille display signs for the visually impaired.
-              <a class="link-to-new-page" href="#">Contact us.</a>
+              <a class="link-to-new-page" href="#"
+                >Other needs or questions?
+                <span class="sr-only">send us a message</span></a
+              >
             </p>
           </details>
           <details>

@@ -37,7 +37,6 @@ details summary {
 
 details summary::after {
   content: "+";
-  color: var(--color-lightest-blue);
   position: absolute;
   font-size: 1.75rem;
   font-weight: 200;
@@ -49,9 +48,4 @@ details summary::after {
 details[open] summary::after {
   transform: rotate(45deg);
   font-size: 2rem;
-}
-
-details p {
-  font-size: var(--text-med);
-  width: 100%;
 }

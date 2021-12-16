@@ -29,13 +29,13 @@
     <link rel="stylesheet" href="/css/sticky-nav.css">
     <link rel="stylesheet" href="/css/index.css" />
     <title>Home page | Community Science Museum</title>
+    <script src="/script.js" defer></script>
   </head>
   <body class="site-grid">
-    <header class="header-container">
+    <header class="primary-header-container">
       <div class="container">
-        <div class="header-container-items">
-          <div class="header-container-items-logo">
-            <a href="#" aria-label="logo and brand name">
+          <div class="primary-header-container-logo">
+            <a href="/index.html" aria-label="logo and brand name">
               <svg
                 width="156"
                 height="64"
@@ -102,88 +102,20 @@
               </svg>
             </a>
           </div>
-          <div class="header-container-items-primary-navigation">
             <button
-              id="toggle-menu"
-              arial-label="main-navigation-button"
-              class="primary-navigation-hamburgerbtn"
-              type="button"
-            >
-              <svg
-                class="open-navigation-icon"
-                width="57"
-                height="50"
-                viewBox="0 0 57 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 10.9C8 10.1309 8.30553 9.39325 8.84939 8.84939C9.39325 8.30554 10.1309 8 10.9 8H45.7C46.4691 8 47.2068 8.30554 47.7506 8.84939C48.2945 9.39325 48.6 10.1309 48.6 10.9C48.6 11.6691 48.2945 12.4068 47.7506 12.9506C47.2068 13.4945 46.4691 13.8 45.7 13.8H10.9C10.1309 13.8 9.39325 13.4945 8.84939 12.9506C8.30553 12.4068 8 11.6691 8 10.9Z"
-                  fill="#F36B20"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 24.7C8 23.9309 8.30553 23.1932 8.84939 22.6494C9.39324 22.1055 10.1309 21.8 10.9 21.8H45.7C46.4691 21.8 47.2067 22.1055 47.7506 22.6494C48.2944 23.1932 48.6 23.9309 48.6 24.7C48.6 25.4691 48.2944 26.2068 47.7506 26.7506C47.2067 27.2945 46.4691 27.6 45.7 27.6H10.9C10.1309 27.6 9.39324 27.2945 8.84939 26.7506C8.30553 26.2068 8 25.4691 8 24.7Z"
-                  fill="#F36B20"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 38.5C8 37.7309 8.30553 36.9932 8.84939 36.4494C9.39324 35.9055 10.1309 35.6 10.9 35.6H45.7C46.4691 35.6 47.2067 35.9055 47.7506 36.4494C48.2944 36.9932 48.6 37.7309 48.6 38.5C48.6 39.2691 48.2944 40.0068 47.7506 40.5506C47.2067 41.0945 46.4691 41.4 45.7 41.4H10.9C10.1309 41.4 9.39324 41.0945 8.84939 40.5506C8.30553 40.0068 8 39.2691 8 38.5Z"
-                  fill="#F36B20"
-                />
-              </svg>
-              <svg
-                class="close-navigation-icon"
-                width="57"
-                height="50"
-                viewBox="0 0 57 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 10.9C8 10.1309 8.30553 9.39325 8.84939 8.84939C9.39325 8.30554 10.1309 8 10.9 8H45.7C46.4691 8 47.2068 8.30554 47.7506 8.84939C48.2945 9.39325 48.6 10.1309 48.6 10.9C48.6 11.6691 48.2945 12.4068 47.7506 12.9506C47.2068 13.4945 46.4691 13.8 45.7 13.8H10.9C10.1309 13.8 9.39325 13.4945 8.84939 12.9506C8.30553 12.4068 8 11.6691 8 10.9Z"
-                  fill="#e0f5ff"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 24.7C8 23.9309 8.30553 23.1932 8.84939 22.6494C9.39324 22.1055 10.1309 21.8 10.9 21.8H45.7C46.4691 21.8 47.2067 22.1055 47.7506 22.6494C48.2944 23.1932 48.6 23.9309 48.6 24.7C48.6 25.4691 48.2944 26.2068 47.7506 26.7506C47.2067 27.2945 46.4691 27.6 45.7 27.6H10.9C10.1309 27.6 9.39324 27.2945 8.84939 26.7506C8.30553 26.2068 8 25.4691 8 24.7Z"
-                  fill="#e0f5ff"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 38.5C8 37.7309 8.30553 36.9932 8.84939 36.4494C9.39324 35.9055 10.1309 35.6 10.9 35.6H45.7C46.4691 35.6 47.2067 35.9055 47.7506 36.4494C48.2944 36.9932 48.6 37.7309 48.6 38.5C48.6 39.2691 48.2944 40.0068 47.7506 40.5506C47.2067 41.0945 46.4691 41.4 45.7 41.4H10.9C10.1309 41.4 9.39324 41.0945 8.84939 40.5506C8.30553 40.0068 8 39.2691 8 38.5Z"
-                  fill="#e0f5ff"
-                />
-              </svg>
-              <span class="sr-only">Open main menu</span>
+              class="nav-toggle"
+              arial-controls="primary-navigation" aria-expanded="false">
+              <span class="sr-only">Menu</span>
             </button>
-            <nav aria-label="main-navigation" class="primary-navigation-menu">
-              <ul class="primary-navigation-menu-links">
-                <li><a class="menu-item" href="#">HOME</a></li>
-                <li class="has-sub-menu">
-                  <a class="menu-item" href="#">NEWS</a>
-                  <ul>
-                    <li>Visiting Professor of Aeronautics</li>
-                    <li>Night In the Museum</li>
-                    <li>Energetica</li>
-                  </ul>
-                </li>
-                <li><a class="menu-item" href="#">EXHIBITIONS</a></li>
-                <li><a class="menu-item" href="#">GET INVOLVED</a></li>
-                <li><a class="menu-item" href="#">VISIT</a></li>
-                <li><a class="menu-item" href="#">CONTACT</a></li>
+            <nav >
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">EXHIBITIONS</a></li>
+                <li><a href="/get-involved.html">GET INVOLVED</a></li>
+                <li><a href="#">CONTACT</a></li>
               </ul>
             </nav>
-          </div>
-        </div>
       </div>
     </header>
     <main class="main-container">
@@ -199,8 +131,8 @@
             </p>
           </header>
         </section>
-        <nav aria-label="page-navigation" class="main-container-page-nav">
-          <ul>
+        <nav class="main-container-page-nav flex">
+          <ul aria-label="page-navigation" class="main-container-page-nav-ul flex">
             <li><a href="#news">News</a></li>
             <li><a href="#kids">Kids</a></li>
             <li><a href="#schools">Schools</a></li>
@@ -298,7 +230,7 @@
               <span class="sr-only">about how to get involved</span></a
             >
           </section>
-          <img src="/images/pic-of-museum.jpg" alt="" />
+          <img src="/images/pic-of-museum.webp" alt="Picture of the Museum from outside" />
         </article>
       </div>
     </main>
@@ -314,7 +246,7 @@
               leave every whole hour. Send us a message for groups of 6 people or more.
             </p>
             <a class="link-to-new-page" href="#">
-              Contact us 
+              Contact us <span class="sr-only">for guided tours of 6 people or more people</span>>
             </a>
           </details>
           <details>
@@ -323,7 +255,7 @@
               The museum has wheelchair accessibility ramps. It also has audio
               guides and braille display signs for the visually impaired.
               <a class="link-to-new-page" href="#"
-                >Contact us.</a
+                >Other needs or questions? <span class="sr-only">send us a message</span></a
               >
             </p>
           </details>
@@ -345,6 +277,5 @@
         </section>
       </div>
     </footer>
-    <script src="/js/script.js" defer></script>
   </body>
 </html>

@@ -35,12 +35,17 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
-.header-container,
+body {
+  margin: 0;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+.primary-header-container,
 footer {
   background: var(--color-darkest-blue);
   color: var(--color-lightest-orange);
@@ -84,6 +89,7 @@ label {
   font-size: var(--text-med);
   font-weight: 500;
   letter-spacing: 0.07rem;
+  line-height: 1.4rem;
 }
 
 img {
@@ -109,7 +115,8 @@ img {
   }
 
   img {
-    height: 40vh;
+    height: 100%;
+    display: block;
   }
 }
 
@@ -124,7 +131,6 @@ li {
 
 ul {
   margin: 0;
-  padding: 0;
 }
 
 .link-to-new-page {
@@ -137,12 +143,15 @@ ul {
   margin: 1rem;
 }
 
+a:visited {
+  text-decoration: underline;
+  color: #e587fd;
+}
+
 a:hover,
 a:focus,
 summary:hover,
-summary:focus,
-.menu-item:hover,
-.menu-item:focus {
+summary:focus {
   text-decoration: underline;
   color: var(--color-orange);
 }
@@ -154,12 +163,18 @@ summary:focus,
 }
 
 .sr-only {
-  clip: rect(1px, 1px, 1px);
-  clip-path: inset(50%);
+  position: absolute;
   height: 1px;
   width: 1px;
+  padding: 0;
   margin: -1px;
   overflow: hidden;
-  padding: 0;
-  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
 }
