@@ -1,5 +1,4 @@
 .main-container {
-  flex-direction: row;
   background-image: linear-gradient(
     to right top,
     #120a42,
@@ -15,19 +14,36 @@
     #ef7c51,
     #fba04f
   );
+  background-color: #54125a;
+  border-radius: 5em;
+  margin: 2rem 0;
 }
 
 .main-container-form {
   flex-direction: column;
-  padding: 2rem 1rem;
+  align-items: center;
+  padding: 0 0.5rem 3rem;
 }
 
 .main-container-fieldset {
   flex-direction: column;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
 }
-.time-date-picker {
-  flex-wrap: wrap;
-  max-width: 320px;
+
+header {
+  padding: 3rem 0 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-lrg {
+  width: 60%;
+  cursor: pointer;
+  border-radius: 1rem;
 }
 
 label,

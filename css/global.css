@@ -86,7 +86,7 @@ a,
 button,
 label {
   font-family: var(--link-btn-label-font);
-  font-size: var(--text-med);
+  font-size: var(--text-lrg);
   font-weight: 500;
   letter-spacing: 0.07rem;
   line-height: 1.4rem;
@@ -110,7 +110,7 @@ img {
   button,
   label {
     font-family: var(--link-btn-label-font);
-    font-size: var(--text-lrg);
+    font-size: var(--text-xl);
     font-weight: 600;
   }
 
@@ -150,15 +150,17 @@ a:visited {
 
 a:hover,
 a:focus,
+a:active,
 summary:hover,
-summary:focus {
+summary:focus,
+summary:active {
   text-decoration: underline;
   color: var(--color-orange);
 }
 
 .container {
   max-width: 1080px;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 0;
 }
 

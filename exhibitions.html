@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Contact page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. 
+      content="Home page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. 
        Check out new events and exhibitions. Guided tours, special clubs for young people, contact us for arrangements for your school. Donate, volunteer, internship."
     />
     <link
@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/hero-banner.css" />
-    <link rel="stylesheet" href="/css/contact-us.css" />
-    <title>Contact page | Community Science Museum</title>
+    <link rel="stylesheet" href="/css/get-involved.css" />
+    <title>Get Involved | Community Science Museum</title>
     <script src="/script.js" defer></script>
   </head>
   <body>
@@ -126,69 +126,95 @@
     </header>
     <main class="main-container">
       <div class="container">
-        <header>
-          <h1 class="text-center">Contact Us</h1>
-        </header>
-        <form class="main-container-form flex" action="get">
-          <fieldset class="main-container-fieldset flex">
-            <legend><h2>Your Name</h2></legend>
-            <label for="first-name">First Name</label>
-            <input
-              id="first-name"
-              type="text"
-              name="first"
-              placeholder="First Name"
-            />
-            <label for="last-name">Last Name</label>
-            <input
-              id="last-name"
-              type="text"
-              name="last"
-              placeholder="Last Name"
-            />
-          </fieldset>
-          <fieldset class="main-container-fieldset flex">
-            <legend><h2>How can we help you?</h2></legend>
-            <label for="select-topic">Select topic</label>
-            <select name="select" id="select-topic">
-              <option value=""></option>
-            </select>
-            <label for="txtboxMultiline">Your Message</label>
-            <textarea
-              name="message"
-              id="txtboxMultiline"
-              required
-              cols="20"
-              rows="10"
-              placeholder="Your Message"
-            ></textarea>
-          </fieldset>
-          <fieldset class="main-container-fieldset flex">
-            <legend><h2>When & how can we reach you?</h2></legend>
-            <label for="email">E-mail</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="your@email.com"
-            />
-            <label for="phone">Phone</label>
-            <input
-              id="phone"
-              name="phone"
-              type="phone"
-              placeholder="+47 456 78 901"
-            />
-            <label for="date-time">Perferred time to call</label>
-            <input id="date" name="date" type="datetime-local" />
-          </fieldset>
-          <input
-            id="submit"
-            type="submit"
-            class="btn btn-lrg"
-            placeholder="Send"
-          />
-        </form>
+        <section class="main-container-herobanner">
+          <header class="main-container-herobanner-content flex">
+            <h1 class="main-container-herobanner-title">Ways to</h1>
+            <p class="main-container-herobanner-subtitle">
+              Get Involved with us & our affiliates:
+            </p>
+          </header>
+        </section>
+        <article class="main-container-exhibitions">
+          <section>
+            <h2>Cosmology</h2>
+            <div>
+              <p>
+                Explore the wonders of our cosmos. Our fantastic exhibition,
+                ‘The Sky Above Us,’ explores the night sky and what we can see
+                and know about the surrounding universe. We’ll locate the
+                various constellations and galaxies that can be seen and learn a
+                bit about the early navigators who used the stars to travel by.
+                Follow the journey of our solar exploration: from early Arab
+                traders to Galileo’s telescope to the latest exploration of the
+                planets in our solar system.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2>Evolution</h2>
+            <div>
+              <p>
+                For centuries, philosophers and scientists have wrestled with
+                the question of our origins. Where do we come from, and how did
+                we get here? Since Darwin proposed his theory of evolution, we
+                have had a framework for exploring and understanding our place
+                in this world. Discover the origins of life on this planet and
+                how the species we know today have evolved in our time. You can
+                also take some time to meet a few of the creatures who didn’t
+                survive, including our Woolly Mammoth, the Dodos, and several
+                dinosaurs too.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2>Biology and Medicine</h2>
+            <div>
+              <p>
+                From micro-organisms to the human body, significant
+                breakthroughs in biology offer us unique insights into the great
+                wonders of the tiny world. Our life expectancy and quality of
+                life have improved, thanks to our understanding of medicine.
+                Over a series of exhibits, we explore the history of medicine
+                and look at some significant breakthroughs, including
+                discovering penicillin and the first heart transplant. Many of
+                our great medicinal discoveries come from the lab and observing
+                animals in the wild. Often our fellow creatures have beat us to
+                it.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2>Robotics and AI</h2>
+            <div>
+              <p>
+                Robotic and artificial intelligence has long been something we
+                fantasized about, wrote books, and made movies about. But the
+                last two decades have changed this. From practical home
+                applications of AI to industrial uses of robotics, the future is
+                here. Check out the whole history, of Robotics and AI, from the
+                first computer to today's creations; you can even say hello and
+                shake the hand of Rob the Robot. But the science in this field
+                is moving so fast, who knows what Rob will be able to do next
+                year.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2>Ecology</h2>
+            <div>
+              <p>
+                As we learn about the impact humans are having on the planet,
+                it's become more critical for scientists to explore creating a
+                sustainable future for humans and the whole world. In our
+                ecology section of the museum, we unpack the dangers we
+                currently face, including global warming, extinction of species,
+                and pollution. We show all the positive ways scientists and
+                other inspiring people contribute to a brighter future and what
+                you and I can do.
+              </p>
+            </div>
+          </section>
+        </article>
       </div>
     </main>
     <footer class="footer-container">
@@ -203,22 +229,14 @@
               leave every whole hour. Send us a message for groups of 6 people
               or more.
             </p>
-            <a class="link-to-new-page" href="#">
-              Contact us
-              <span class="sr-only"
-                >for guided tours of 6 people or more people</span
-              >>
-            </a>
+            <a class="link-to-new-page" href="#"> Contact us </a>
           </details>
           <details>
             <summary>ACCESSIBILITY</summary>
             <p>
               The museum has wheelchair accessibility ramps. It also has audio
               guides and braille display signs for the visually impaired.
-              <a class="link-to-new-page" href="#"
-                >Other needs or questions?
-                <span class="sr-only">send us a message</span></a
-              >
+              <a class="link-to-new-page" href="#">Contact us.</a>
             </p>
           </details>
           <details>
