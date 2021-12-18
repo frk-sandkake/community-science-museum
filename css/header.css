@@ -1,9 +1,12 @@
+.primary-header-container-logo {
+  width: 35%;
+}
+
 .primary-navigation {
   background-color: var(--color-darkest-blue);
 }
 
 .primary-navigation a {
-  color: var(--color-lightest-orange);
   text-decoration: none;
 }
 
@@ -30,19 +33,6 @@
 
 .primary-navigation a > .active {
   border: 0;
-}
-
-.primary-navigation > li ul {
-  display: none;
-  padding: 0.5rem 0;
-}
-
-.primary-navigation > li ul li {
-  padding: 0.5rem 0;
-}
-
-.primary-navigation > li:hover ul {
-  display: block;
 }
 
 .nav-toggle {

@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 :root {
   --color-darkest-blue: #003047;
   --color-blue: #14b3ff;
@@ -17,11 +12,24 @@
     #00b8cd,
     #19fae8
   );
-  --h1-h5-font: "BioRhyme", serif;
-  --h1-h5-font-variant: "ss02" on, "ss03" on, "ss07" on, "ss08" on, "kern" off,
-    "liga" off;
+  --gradient-teal: linear-gradient(
+    to right top,
+    #003047,
+    #003548,
+    #003948,
+    #003d47,
+    #004145,
+    #004b4c,
+    #005451,
+    #015e56,
+    #017067,
+    #028378,
+    #02968a,
+    #03aa9c
+  );
+  --h1-h5-font: "Playfair Display", serif;
   --link-btn-label-font: "Montserrat", sans-serif;
-  --text-font: "Poppins", "Montserrat", sans-serif;
+  --text-font: "Poppins", sans-serif;
   --text-xl: 20px;
   --text-lrg: 18px;
   --text-med: 16px;
@@ -37,6 +45,7 @@
 
 html:focus-within {
   scroll-behavior: smooth;
+  overflow: auto;
 }
 
 body {
@@ -48,7 +57,7 @@ body {
 .primary-header-container,
 footer {
   background: var(--color-darkest-blue);
-  color: var(--color-lightest-orange);
+  color: var(--color-lightest-blue);
 }
 
 h1,
@@ -59,74 +68,75 @@ h5,
 h6 {
   font-family: var(--h1-h5-font);
   font-variant: var(--h1-h5-font-variant);
-  font-weight: 400;
   margin: 0;
   padding: 0.5rem 1rem;
+  letter-spacing: 0.099em;
 }
 
 h1 {
   font-size: 36px;
-  letter-spacing: 0.06em;
-  font-weight: 800;
-  text-transform: capitalize;
+  font-weight: 600;
+  text-transform: uppercase;
   line-height: 2.8rem;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: small-caps;
 }
 
 p {
   font-family: var(--text-font);
   font-size: var(--text-med);
-  font-weight: 300;
-  line-height: 1.35;
+  font-weight: 400;
+  line-height: 1.9rem;
+  letter-spacing: 0.11em;
   margin: 0;
-  padding: 0.5rem 1rem;
-  max-width: 70ch;
+  padding: 0.5rem;
+  max-width: 65ch;
 }
 
 a,
 button,
-label {
+.btn-lrg,
+summary {
   font-family: var(--link-btn-label-font);
-  font-size: var(--text-lrg);
-  font-weight: 500;
+  font-size: var(--text-med);
+  font-weight: 400;
   letter-spacing: 0.07rem;
   line-height: 1.4rem;
+  text-transform: uppercase;
+  color: var(--color-lightest-blue);
 }
 
 img {
   width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  object-position: center;
+  display: block;
 }
 
 @media screen and (mix-width: 600px) {
   p {
     font-size: var(--text-lrg);
-    font-weight: 300;
-    line-height: 1.35;
+    font-weight: 500;
+    line-height: 1.5rem;
   }
 
   a,
   button,
-  label {
-    font-family: var(--link-btn-label-font);
-    font-size: var(--text-xl);
-    font-weight: 600;
-  }
-
-  img {
-    height: 100%;
-    display: block;
+  .btn-lrg,
+  summary {
+    font-size: var(--text-lx);
+    font-weight: 500;
   }
 }
 
 li {
   font-family: var(--link-btn-label-font);
-  font-size: var(--text-med);
-  font-weight: 300;
-  letter-spacing: 0.056rem;
+  font-size: var(--text-lrg);
+  font-weight: 400;
+  letter-spacing: 0.06rem;
   list-style: none;
-  text-align: center;
 }
 
 ul {
@@ -134,19 +144,18 @@ ul {
 }
 
 .link-to-new-page {
-  color: var(--color-lightest-orange);
+  color: var(--color-lightest-blue);
   background-color: var(--color-darkest-blue);
   border-radius: 5rem;
-  text-align: center;
-  display: inherit;
+  display: block;
   padding: 0.5rem;
   margin: 1rem;
 }
 
-a:visited {
+/*a:visited {
   text-decoration: underline;
   color: #e587fd;
-}
+}*/
 
 a:hover,
 a:focus,
@@ -179,4 +188,8 @@ summary:active {
 .flex {
   display: flex;
   gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }

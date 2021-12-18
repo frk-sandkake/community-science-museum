@@ -1,25 +1,11 @@
 .main-container {
-  background-image: linear-gradient(
-    to right top,
-    #120a42,
-    #240d49,
-    #340f4f,
-    #441055,
-    #54125a,
-    #6e165e,
-    #871c60,
-    #9f2661,
-    #c13e5d,
-    #dc5b57,
-    #ef7c51,
-    #fba04f
-  );
-  background-color: #54125a;
-  border-radius: 5em;
-  margin: 2rem 0;
+  background-color: var(--color-darkest-blue);
+  color: var(--color-lightest-blue);
 }
 
 .main-container-form {
+  background-image: var(--gradient-teal);
+  background-color: #004b4c;
   flex-direction: column;
   align-items: center;
   padding: 0 0.5rem 3rem;
@@ -27,37 +13,30 @@
 
 .main-container-fieldset {
   flex-direction: column;
-  width: 100%;
   padding: 1rem 0.5rem;
-  margin: 1rem 0;
-}
-
-header {
-  padding: 3rem 0 0;
-}
-
-.text-center {
-  text-align: center;
+  width: 80%;
 }
 
 .btn-lrg {
-  width: 60%;
+  width: 30%;
   cursor: pointer;
   border-radius: 1rem;
-}
-
-label,
-legend {
-  color: #fceefa;
 }
 
 input,
 select,
 :placeholder-shown {
-  background-color: #fceefa;
-  border-radius: 0.5rem;
-  padding: 0.5em;
-  font-family: var(--link-btn-label-font);
-  font-size: var(--text-sml);
-  font-weight: 400;
+  border-radius: 0.5em;
+  padding: 0.3rem 0.5em;
+}
+
+@media screen and (min-width: 600px) {
+  .main-container-form {
+    width: 100%;
+    border-radius: 60em;
+  }
+
+  .main-container-fieldset {
+    width: 60%;
+  }
 }

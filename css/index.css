@@ -5,51 +5,47 @@
       rgba(37, 37, 37, 0.322)
     ),
     url(/images/kids-playing-heroimg.webp);
+  background-color: #559636;
   background-size: cover;
   background-position: center top 20%;
 }
 
-.main-container-herobanner-content {
-  color: var(--color-lightest-blue);
-}
-
-.main-container-herobanner-title {
-  text-align: center;
-  text-indent: -50px;
-}
-
-.main-container-herobanner-subtitle {
-  line-height: 1.4rem;
-  letter-spacing: 0.1rem;
-}
-
 .main-container-news {
+  flex-direction: column;
+  align-items: center;
   background-image: var(--gradient-blue-green);
-  text-align: center;
+  background-color: #003e66;
   color: var(--color-lightest-orange);
-  padding: 0.5rem 0.5rem 1.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .main-container-news-cards {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-bottom: 1.5rem;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .card-container {
   background: var(--color-lightest-orange);
+  color: var(--color-darkest-blue);
   border: 1px solid #010728;
   box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.918);
+  padding-bottom: 1rem;
 }
 
-.card-container-subheading {
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
-  color: var(--color-darkest-blue);
+.card-container img {
+  height: 45vh;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.card-container p {
+  height: 20vh;
+  padding-top: 1rem;
+  line-height: 1.8em;
+  font-size: var(--text-lrg);
+  font-weight: 500;
 }
 
 .main-container-get-involved {
@@ -64,16 +60,23 @@
 }
 
 .main-container-get-involved img {
-  object-fit: fill;
+  height: 40vh;
+  object-fit: cover;
+  width: 90%;
 }
 
 @media screen and (min-width: 600px) {
   .main-container-news-cards {
     flex-direction: row;
+    width: 100%;
   }
 
   .card-container {
     width: 32%;
+  }
+
+  .card-container img {
+    object-position: center;
   }
 
   .main-container-get-involved {
@@ -85,7 +88,7 @@
   }
 
   .main-container-get-involved img {
-    width: 80%;
-    height: 30%;
+    width: 70%;
+    height: 50vh;
   }
 }
