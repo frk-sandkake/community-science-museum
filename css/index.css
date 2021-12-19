@@ -1,61 +1,103 @@
 .main-container-herobanner {
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.911),
-      rgba(37, 37, 37, 0.322)
-    ),
-    url(/images/kids-playing-heroimg.webp);
-  background-color: #559636;
+  background-image: url(/images/kids-playing-heroimg.webp);
+  background-color: var(--clr-1blue-900);
   background-size: cover;
-  background-position: center top 20%;
+  background-position: center;
 }
 
 .main-container-news {
   flex-direction: column;
   align-items: center;
-  background-image: var(--gradient-blue-green);
-  background-color: #003e66;
-  color: var(--color-lightest-orange);
+  background-color: var(--clr-2green-800);
+  color: var(--clr-2orange-100);
   margin: 1rem 0;
   padding: 1rem 0;
+  width: 100%;
 }
 
 .main-container-news-cards {
   flex-direction: column;
-  justify-content: space-around;
-  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
 }
 
 .card-container {
-  background: var(--color-lightest-orange);
-  color: var(--color-darkest-blue);
+  background: var(--clr-2orange-100);
+  color: var(--clr-2green-800);
   border: 1px solid #010728;
-  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.918);
   padding-bottom: 1rem;
+  width: 80%;
 }
 
 .card-container img {
   height: 45vh;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center;
 }
 
 .card-container p {
-  height: 20vh;
+  height: 25vh;
   padding-top: 1rem;
   line-height: 1.8em;
   font-size: var(--text-lrg);
   font-weight: 500;
 }
 
+.main-container-kids {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-1blue-900);
+  margin: 3rem 0;
+  padding: 0.5em;
+}
+
+.main-container-kids-item {
+  max-width: 380px;
+  max-height: 380px;
+  border-radius: 50em;
+  margin: -1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.746);
+  padding: 1em;
+}
+
+.main-container-kids-item h3 {
+  border: 1px solid var(--clr-1blue-900);
+  border-radius: 4em;
+  padding: 0.5em;
+}
+
+.exploring {
+  background-color: #fee1f1;
+  padding: 3em 1em;
+}
+
+.star-club {
+  background-color: #b9fdf8;
+  padding: 3em 1em;
+}
+
+.holiday-club {
+  background-color: #b9f3fe;
+  padding: 3em 1em;
+}
+
 .main-container-get-involved {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  background-color: var(--color-lightest-blue);
+  background-color: var(--clr-2green-100);
+  color: var(--clr-2green-800);
   margin-bottom: 1rem;
 }
 
@@ -65,22 +107,14 @@
   width: 90%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 840px) {
   .main-container-news-cards {
     flex-direction: row;
-    width: 100%;
+    width: 98%;
   }
 
   .card-container {
-    width: 32%;
-  }
-
-  .card-container img {
-    object-position: center;
-  }
-
-  .main-container-get-involved {
-    flex-direction: row-reverse;
+    width: 100%;
   }
 
   .main-container-get-involved section {

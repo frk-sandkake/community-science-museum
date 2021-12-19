@@ -5,15 +5,19 @@
   left: 0;
   z-index: 500;
   overflow-x: auto;
-  background-color: var(--color-darkest-blue);
-  width: max-content;
+  background-color: var(--clr-1blue-900);
+  width: auto;
+  justify-content: center;
 }
 
 .main-container-page-nav-ul {
   flex-direction: row;
+  justify-content: stretch;
   padding: 0.5rem;
 }
 
 .main-container-page-nav li {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  color: var(--clr-1blue-500);
 }
