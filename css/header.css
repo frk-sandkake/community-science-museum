@@ -9,17 +9,24 @@
 }
 
 .primary-navigation a {
+  color: var(--clr-1blue-100);
   text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.primary-navigation li {
+  padding: 0.8em 0;
 }
 
 .primary-navigation a:hover,
 .primary-navigation a:focus {
   text-decoration: underline;
-  color: var(--color-orange);
+  color: var(--clr-2orange-500);
 }
 
 .primary-navigation {
-  background-color: var(--color-darkest-blue);
+  background-color: var(--clr-1blue-900);
   opacity: 95%;
   position: fixed;
   z-index: 1000;
@@ -60,12 +67,14 @@
 }
 
 .nav-toggle:focus-visible {
-  outline: 1px solid var(--color-lightest-orange);
+  outline: 1px solid var(--clr-1blue-100);
   outline-offset: 1px;
 }
 
 @media screen and (min-width: 450px) {
   .nav-toggle {
     width: 3rem;
+    right: 2rem;
+    top: 1.3rem;
   }
 }

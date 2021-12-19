@@ -28,7 +28,7 @@ details summary::-webkit-details-marker {
 details summary {
   width: 100%;
   padding: 0.5rem;
-  border-top: 1px solid var(--color-lightest-blue);
+  border-top: 1px solid var(--clr-1blue-100);
   position: relative;
   cursor: pointer;
   list-style: none;

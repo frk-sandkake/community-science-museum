@@ -1,10 +1,10 @@
 .main-container {
-  background-color: var(--color-darkest-blue);
-  color: var(--color-lightest-blue);
+  background-color: var(--clr-1blue-900);
+  color: var(--clr-1blue-100);
 }
 
 .main-container-form {
-  background-image: var(--gradient-teal);
+  background-image: var(--clr-lin-grad-teal);
   background-color: #004b4c;
   flex-direction: column;
   align-items: center;
@@ -15,12 +15,6 @@
   flex-direction: column;
   padding: 1rem 0.5rem;
   width: 80%;
-}
-
-.btn-lrg {
-  width: 30%;
-  cursor: pointer;
-  border-radius: 1rem;
 }
 
 input,
