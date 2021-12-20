@@ -2,10 +2,10 @@
   max-height: 7em;
 }
 
-.primary-header-container-logo {
-  width: 40%;
-  max-width: 12em;
-  max-height: 6em;
+.primary-header-container-logo img {
+  max-width: 70%;
+  object-fit: scale-down;
+  object-position: top left;
 }
 
 .primary-navigation a {

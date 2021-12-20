@@ -19,5 +19,8 @@
 .main-container-page-nav li {
   padding: 0.5rem 1rem;
   width: max-content;
-  color: var(--clr-1blue-500);
+}
+
+.main-container-page-nav li a {
+  color: var(--clr-1blue-100);
 }

@@ -75,7 +75,7 @@ h6 {
   font-family: var(--h1-h5-font);
   font-variant: var(--h1-h5-font-variant);
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   letter-spacing: 0.099em;
 }
 
@@ -83,7 +83,7 @@ h1 {
   font-size: 36px;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 2.8rem;
+  line-height: 2.5rem;
 }
 
 h2 {
@@ -92,7 +92,8 @@ h2 {
   text-transform: small-caps;
 }
 
-p {
+p,
+address {
   font-family: var(--text-font);
   font-size: var(--text-med);
   font-weight: 400;

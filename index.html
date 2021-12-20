@@ -33,7 +33,11 @@
       <div class="container">
           <div class="primary-header-container-logo">
             <a href="index.html" aria-label="logo and brand name">
-             <img src="/images/LOGO-brandname-new.svg" alt="picture of an Atom and title: Community Science Museum"></a>
+              <img 
+              src="/images/LOGO-brandname-new.svg" 
+              alt="picture of an Atom and title: Community Science Museum"
+              width="170" height="80"/>
+            </a>
           </div>
             <button
               class="nav-toggle"
@@ -68,13 +72,14 @@
           <ul aria-label="page-navigation" class="main-container-page-nav-ul flex">
             <li class="text-center"><a href="#news">News</a></li>
             <li class="text-center"><a href="#kids">Kids</a></li>
-            <li class="text-center"><a href="#schools">Schools</a></li>
+            <li class="text-center"><a href="#schools">Schools</a></li> 
+            <li class="text-center"><a href="#exhibitions">Exhibitions</a></li>
             <li class="text-center"><a href="#get-involved">Get Involved</a></li>
             <li class="text-center"><a href="#visit-us">Visit us</a></li>
             <li class="text-center"><a href="#top">To top</a></li>
           </ul>
         </nav>
-        <section class="main-container-news flex text-center">
+        <section id="news" class="main-container-news flex text-center">
           <h2>Don't miss out!</h2>
           <div class="main-container-news-cards flex">
             <div class="card-container text-center box-shadow">
@@ -100,7 +105,7 @@
             >Get to our special events</a
           >
         </section>
-        <article class="main-container-kids flex">
+        <article id="kids" class="main-container-kids flex">
           <div class="main-container-kids-item image box-shadow flex">
             <img class="main-container-kids-item flex" src="/images/kid-experimenting.webp" alt="Young person, wearing protective googles and gloves doing a science experiment.">
           </div>
@@ -129,7 +134,7 @@
             </p>
           </section>
         </article>
-        <article class="main-container-school">
+        <article id="schools" class="main-container-school">
           <h2>School</h2>
           <p>
             We want to create a place of learning and exploring for school students of all ages. Our team will give them guided tours of the museum, teach them in our learning laboratory, and provide excellent video presentations that excite and inspire them.
@@ -138,10 +143,10 @@
             >Contact us to plan your visit</a>.
           </a>
         </article>
-        <section class="main-container-exhibitions">
+        <section id="exhibitions" class="main-container-exhibitions">
           <h2>Our Exhibitions</h2>
         </section>
-        <article class="main-container-get-involved flex">
+        <article id="get-involved" class="main-container-get-involved flex">
           <img src="/images/pic-of-museum.webp" alt="Picture of the Museum from outside" />
           <section>
             <h2>Get Involved</h2>
@@ -149,7 +154,7 @@
               Have something you would like to share with the museum and
               it's visitors? It could be time, money or exiting collections. <br> 
               Or maybe you would like to try out working here? We also have a lot
-              to offer for reseachers and accademics.
+              to offer for researchers and academics.
             </p>
             <a class="btn btn-grad-teal text-center" href="get-involved.html"
               >Read more!
@@ -161,45 +166,73 @@
     </main>
     <footer class="footer-container">
       <div class="container">
-        <section class="footer-container-visit-us">
+        <article id="visit-us" class="footer-container-visit-us flex">
           <h2>Visit Us</h2>
-          <details>
-            <summary>ADMISSION</summary>
-            <p>
-              The entrance is free for all! Guided tours are 70NOK per person.
-              Meet up in reception to join. Just missed one, don’t worry they
-              leave every whole hour. Send us a message for groups of 6 people or more.
-            </p>
-            <a class="btn btn-grad-teal text-center" href="contact-us.html">
-              Contact us <span class="sr-only">for guided tours of 6 people or more people</span>>
-            </a>
-          </details>
-          <details>
-            <summary>ACCESSIBILITY</summary>
-            <p>
-              The museum has wheelchair accessibility ramps. It also has audio
-              guides and braille display signs for the visually impaired.
-              <a class="btn btn-grad-teal text-center" href="contact-us.html"
-                >Other needs or questions? <span class="sr-only">send us a message</span></a
-              >
-            </p>
-          </details>
-          <details>
-            <summary>FOOD AND DRINK</summary>
-            <p>
-              There is a café attached to the museum where you can get light
-              lunches, soft drinks, coffee, snacks and more.
-            </p>
-          </details>
-          <details>
-            <summary>SHOP</summary>
-            <p>
-              Our shop offers a range of memorabilia from the museum as well as
-              great gifts and activity packs that allow you to continue to
-              explore science even after you’ve left the museum.
-            </p>
-          </details>
-        </section>
+          <section class="footer-container-visit-us-items flex">
+            <section class="footer-container-visit-us-item-details flex">
+              <details>
+                <summary><h3>ADMISSION</h3></summary>
+                <p>
+                  The entrance is free for all! Guided tours are 70NOK per person.
+                  Meet up in reception to join. Just missed one, don’t worry they
+                  leave every whole hour. Send us a message for groups of 6 people or more.
+                </p>
+                <a class="btn btn-grad-teal text-center" href="contact-us.html">
+                  Contact us <span class="sr-only">for guided tours of 6 people or more people</span>>
+                </a>
+              </details>
+              <details>
+                <summary><h3>ACCESSIBILITY</h3></summary>
+                <p>
+                  The museum has wheelchair accessibility ramps. It also has audio
+                  guides and braille display signs for the visually impaired.
+                  <a class="btn btn-grad-teal text-center" href="contact-us.html"
+                    >Other needs or questions? <span class="sr-only">send us a message</span></a
+                  >
+                </p>
+              </details>
+              <details>
+                <summary><h3>FOOD AND DRINK</h3></summary>
+                <p>
+                  There is a café attached to the museum where you can get light
+                  lunches, soft drinks, coffee, snacks and more.
+                </p>
+              </details>
+              <details>
+                <summary><h3>SHOP</h3></summary>
+                <p>
+                  Our shop offers a range of memorabilia from the museum as well as
+                  great gifts and activity packs that allow you to continue to
+                  explore science even after you’ve left the museum.
+                </p>
+              </details>
+            </section>            
+          <section class="footer-container-visit-us-item-hours-location flex" aria-section="hours-location">
+            <div aria-label="opening-hours" class="hours">
+              <h3>Opening Hours</h3>
+              <p>Closed on Mondays <br /> Open Tuesday-Sunday: <time>10</time> - <time>19</time> </p>
+            </div>
+            <div aria-label="location" class="location flex">
+              <header>
+                <h3>Location</h3>
+                <address>Olaf Helsets vei 5, <br /> 0694 Oslo </address>
+              </header>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.912386165172!2d10.840128366094092!3d59.86720093185027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50c313cea7%3A0x124afd6cee4553b0!2sOlaf%20Helsets%20vei%205%2C%200694%20Oslo!5e0!3m2!1ssv!2sno!4v1639937420511!5m2!1ssv!2sno" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </section>
+         </section>
+        </article>
+        <footer class="logo-copyright flex">
+          <a href="index.html" aria-label="logo and brand name">
+            <img 
+            src="/images/LOGO-brandname-new.svg" 
+            alt="picture of an Atom and title: Community Science Museum"
+            width="170" height="80"/>
+          </a>
+          <small>©2021 frkSandkake <br/> Educational use only! <br/> PhotoCredit: <br/> <a href="https://unsplash.com/">Unsplash</a> & <a href="https://www.pexels.com/">Pexels</a></small> 
+        </footer>
       </div>
     </footer>
   </body>
