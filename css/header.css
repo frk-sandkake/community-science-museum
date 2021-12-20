@@ -51,13 +51,14 @@
   display: block;
   position: absolute;
   z-index: 2000;
-  right: 1rem;
-  top: 1rem;
+  right: 1.2rem;
+  top: 1.2rem;
   background: transparent;
   background-image: url(/images/nav-btn.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 11%;
+  width: 3rem;
+  height: 3rem;
   aspect-ratio: 1;
   border: 0;
 }
@@ -73,7 +74,6 @@
 
 @media screen and (min-width: 450px) {
   .nav-toggle {
-    width: 3rem;
     right: 2rem;
     top: 1.3rem;
   }
