@@ -6,15 +6,34 @@
 .main-container-form {
   background-image: var(--clr-lin-grad-teal);
   background-color: #004b4c;
+  color: var(--clr-1blue-100);
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 0 0.5rem 3rem;
 }
 
 .main-container-fieldset {
   flex-direction: column;
-  padding: 1rem 0.5rem;
-  width: 80%;
+  padding: 1em 0.5em;
+  width: 100%;
+  border: 0.5px;
+  box-shadow: 0 4px 5px rgba(224, 245, 255, 0.253);
+}
+
+.label-input {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.label-input input {
+  width: 70%;
+}
+
+.datetime input {
+  width: 50%;
 }
 
 input,
@@ -22,15 +41,23 @@ select,
 :placeholder-shown {
   border-radius: 0.5em;
   padding: 0.3rem 0.5em;
+  background-color: var(--clr-1blue-100);
 }
 
 @media screen and (min-width: 600px) {
   .main-container-form {
     width: 100%;
     border-radius: 60em;
+    padding: 3em 0;
   }
 
   .main-container-fieldset {
-    width: 60%;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .main-container-fieldset {
+    width: 50%;
   }
 }

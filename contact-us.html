@@ -76,23 +76,27 @@
           </header>
           <fieldset class="main-container-fieldset flex">
             <legend><h2>Your Name</h2></legend>
-            <label for="first-name">First Name</label>
-            <input
-              id="first-name"
-              type="text"
-              name="first"
-              placeholder="First Name"
-            />
-            <label for="last-name">Last Name</label>
-            <input
-              id="last-name"
-              type="text"
-              name="last"
-              placeholder="Last Name"
-            />
+            <span class="label-input flex">
+              <label for="explicit-label-name">First Name:</label>
+              <input
+                id="first-name"
+                type="text"
+                name="first"
+                placeholder="First Name"
+              />
+            </span>
+            <span class="label-input flex">
+              <label for="last-name">Last Name:</label>
+              <input
+                id="last-name"
+                type="text"
+                name="last"
+                placeholder="Last Name"
+              />
+            </span>
           </fieldset>
           <fieldset class="main-container-fieldset flex">
-            <legend><h2>How can we help you?</h2></legend>
+            <legend><h2>How can we help?</h2></legend>
             <label for="select-topic">Select topic</label>
             <select name="select" id="select-topic">
               <option value="Accessibility">Accessibility</option>
@@ -113,25 +117,31 @@
             ></textarea>
           </fieldset>
           <fieldset class="main-container-fieldset flex">
-            <legend><h2>How to contact you?</h2></legend>
-            <label for="email">E-mail</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="your@email.com"
-            />
-            <label for="phone">Phone</label>
-            <input
-              id="phone"
-              name="phone"
-              type="phone"
-              placeholder="+47 456 78 901"
-            />
-            <label for="date-time">Perferred time to call</label>
-            <input id="date" name="date" type="datetime-local" />
+            <legend><h2>Contact information</h2></legend>
+            <span class="label-input flex">
+              <label for="email">E-mail:</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="your@email.com"
+              />
+            </span>
+            <span class="label-input flex">
+              <label for="phone-number">Phone:</label>
+              <input
+                id="phone-number"
+                name="phone"
+                type="phone-number"
+                placeholder="+47 456 78 901"
+              />
+            </span>
+            <span class="label-input datetime flex">
+              <label for="date-time">Select date&time:</label>
+              <input id="date-time" name="date-time" type="datetime-local" />
+            </span>
           </fieldset>
-          <input id="submit" type="submit" class="btn btn-lrg" value="Send" />
+          <input id="submit" type="submit" class="btn btn-grad-teal" value="Send" />
         </form>
       </div>
     </main>
@@ -178,24 +188,24 @@
                 </p>
               </details>
             </section>            
-          <section class="footer-container-visit-us-item-hours-location flex" aria-section="hours-location">
-            <div aria-label="opening-hours" class="hours">
+          <section class="footer-container-visit-us-item-hours-location flex" aria-label="hours-location">
+            <div class="hours">
               <h3>Opening Hours</h3>
               <p>Closed on Mondays <br /> Open Tuesday-Sunday: <time>10</time> - <time>19</time> </p>
             </div>
-            <div aria-label="location" class="location flex">
+            <div class="location flex">
               <header>
                 <h3>Location</h3>
                 <address>Olaf Helsets vei 5, <br /> 0694 Oslo </address>
               </header>
               <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.912386165172!2d10.840128366094092!3d59.86720093185027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50c313cea7%3A0x124afd6cee4553b0!2sOlaf%20Helsets%20vei%205%2C%200694%20Oslo!5e0!3m2!1ssv!2sno!4v1639937420511!5m2!1ssv!2sno" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe aria-label="i-frame" alt="frame for google-maps and link to location of community science museum" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.912386165172!2d10.840128366094092!3d59.86720093185027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50c313cea7%3A0x124afd6cee4553b0!2sOlaf%20Helsets%20vei%205%2C%200694%20Oslo!5e0!3m2!1ssv!2sno!4v1639937420511!5m2!1ssv!2sno" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
             </div>
           </section>
          </section>
         </article>
-        <footer class="logo-copyright flex">
+        <section class="logo-copyright flex">
           <a href="index.html" aria-label="logo and brand name">
             <img 
             src="/images/LOGO-brandname-new.svg" 
@@ -203,7 +213,7 @@
             width="170" height="80"/>
           </a>
           <small>©2021 frkSandkake <br/> Educational use only! <br/> PhotoCredit: <br/> <a href="https://unsplash.com/">Unsplash</a> & <a href="https://www.pexels.com/">Pexels</a></small> 
-        </footer>
+        </section>
       </div>
     </footer>
   </body>
