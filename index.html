@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Home page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. 
-       Check out new events and exhibitions. Guided tours, special clubs for young people, contact us for arrangements for your school. Donate, volunteer, internship."
+      content="Home page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. Check out new events and exhibitions. Guided tours, special clubs for young people, contact us for arrangements for your school. Donate, volunteer, internship."
     />
     <link
       rel="stylesheet"
@@ -29,7 +28,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="primary-header-container">
+    <header id="to-top" class="primary-header-container">
       <div class="container">
           <div class="primary-header-container-logo">
             <a href="index.html" aria-label="logo and brand name">
@@ -44,7 +43,7 @@
               arial-controls="primary-navigation" aria-expanded="false">
               <span class="sr-only">Menu</span>
             </button>
-            <nav >
+            <nav aria-label="primary navigation">
               <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="active text-center"><a href="index.html">HOME</a></li>
                 <li class="text-center"><a href="special-events.html">SPECIAL EVENTS</a></li>
@@ -68,8 +67,8 @@
             </p>
           </header>
         </section>
-        <nav class="main-container-page-nav flex">
-          <ul aria-label="page-navigation" class="main-container-page-nav-ul flex">
+        <nav aria-label="page navigation" class="main-container-page-nav flex">
+          <ul class="main-container-page-nav-ul flex">
             <li class="text-center"><a href="#news">News</a></li>
             <li class="text-center"><a href="#kids">Kids</a></li>
             <li class="text-center"><a href="#schools">Schools</a></li> 
@@ -134,20 +133,64 @@
             </p>
           </section>
         </article>
-        <article id="schools" class="main-container-school">
-          <h2>School</h2>
-          <p>
-            We want to create a place of learning and exploring for school students of all ages. Our team will give them guided tours of the museum, teach them in our learning laboratory, and provide excellent video presentations that excite and inspire them.
-          </p>
-          <a href="contact-us.html" class="btn btn-grad-blue-green text-center"
-            >Contact us to plan your visit</a>.
-          </a>
+        <article id="schools" class="main-container-school flex">
+          <span class="sr-only"><h2>Schools</h2></span>
+          <div class="frame box-shadow">
+            <img class="frame" src="/images/school-students-learning.webp" alt="Two school students learning about science from a science professor">
+            <p>Schools</p>
+          </div>
+          <div class="text-link flex">
+            <p>
+              We have created a place to <strong> Explore Science </strong> for school students of <em> all ages</em>. <br/> <br/> Let our experienced team lead your students through the Science World in inspiring and funny ways. <br/> <br/> Don't wait, lets plan your next visit today!
+            </p>
+            <a href="contact-us.html" class="btn btn-grad-blue-green text-center"
+              >Contact us!<span class="sr-only">about planing your school trip</span></a>
+            </a>
+          </div>
         </article>
-        <section id="exhibitions" class="main-container-exhibitions">
-          <h2>Our Exhibitions</h2>
-        </section>
+        <article id="exhibitions" class="main-container-exhibitions text-center flex">
+            <h2>Our Exhibitions</h2>
+          <section class="main-container-exhibitions-items flex">
+            <div id="medicine-biology" class="card-content">
+              <h3>Medicine & biology</h3>
+              <img 
+              src="/images/biology-person-with-hat.webp" 
+              alt="A picture of a biology test-dummy with a hat on it's head"
+              width="323" height="279">
+            </div>
+            <div id="ai-robotics" class="card-content">
+              <h3>AI & robotics</h3>
+              <img 
+              src="/images/robot-vehicle.webp" 
+              alt="Picture of robot vehicles"
+              width="323" height="279">
+              </div>
+            <div id="ecology" class="card-content">
+              <h3>Ecology</h3>
+              <img 
+              src="/images/ecology-the-earth.webp" 
+              alt="Painted picture of the earth seen from space, with purple background"
+              width="323" height="279">
+            </div>
+            <div id="evolution" class="card-content">
+              <h3>Evolution</h3>
+              <img 
+              src="/images/evolution-dinosaur-excavated.webp" 
+              alt="Picture of a dinosaur getting excavated"
+              width="323" height="279">
+            </div>
+            <div id="cosmology" class="card-content">
+              <h3>Cosmology</h3>
+              <img src="/images/cosmology-space-pink.webp" alt="A picture of outer space with lots of bold colors" width="323" height="279">
+            </div>
+            <div class="card-text flex text.center">
+              <p><strong>Over 1000 exhibits, so much to do!</strong></p>
+              <a href="exhibitions.html" class="btn btn-grad-teal">See more!<span class="sr-only">about our exhibitions</span></a>
+            </div>
+          </section>
+        </article>
         <article id="get-involved" class="main-container-get-involved flex">
-          <img src="/images/pic-of-museum.webp" alt="Picture of the Museum from outside" />
+          <img src="/images/pic-of-museum.webp" alt="Picture of the Museum from outside" >
           <section>
             <h2>Get Involved</h2>
             <p>
@@ -207,7 +250,7 @@
                 </p>
               </details>
             </section>            
-          <section class="footer-container-visit-us-item-hours-location flex">
+            <section class="footer-container-visit-us-item-hours-location flex">
             <div class="hours">
               <h3>Opening Hours</h3>
               <p>Closed on Mondays <br /> Open Tuesday-Sunday: <time>10</time> - <time>19</time> </p>
@@ -221,8 +264,8 @@
                 <iframe aria-label="i-frame" alt="frame for google-maps and link to location of community science museum" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.912386165172!2d10.840128366094092!3d59.86720093185027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50c313cea7%3A0x124afd6cee4553b0!2sOlaf%20Helsets%20vei%205%2C%200694%20Oslo!5e0!3m2!1ssv!2sno!4v1639937420511!5m2!1ssv!2sno" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
             </div>
+            </section>
           </section>
-         </section>
         </article>
         <section class="logo-copyright flex">
           <a href="index.html" aria-label="logo and brand name">

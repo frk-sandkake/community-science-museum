@@ -116,6 +116,7 @@ address {
 @media screen and (min-width: 768px) {
   .footer-container-visit-us-items {
     flex-direction: row;
+    justify-content: space-between;
     gap: 3rem;
     width: 100%;
   }
@@ -139,5 +140,9 @@ address {
     align-items: center;
     padding: 0.5rem;
     gap: 2rem;
+  }
+
+  .logo-copyright {
+    padding: 1.5rem;
   }
 }

@@ -35,7 +35,7 @@
   --h1-h5-font: "Playfair Display", serif;
   --link-btn-label-font: "Montserrat", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-  --text-font: "Poppins", sans-serif;
+  --text-font: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --text-xl: 20px;
   --text-lrg: 18px;
   --text-med: 16px;
@@ -73,7 +73,6 @@ h4,
 h5,
 h6 {
   font-family: var(--h1-h5-font);
-  font-variant: var(--h1-h5-font-variant);
   margin: 0;
   padding: 0.5rem;
   letter-spacing: 0.099em;
@@ -119,6 +118,7 @@ summary {
 
 img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -152,9 +152,9 @@ ul {
 
 .btn {
   border-radius: 4rem;
-  width: 50%;
+  width: 60%;
   max-width: 16rem;
-  padding: 1rem;
+  padding: 1rem 0.9rem;
   margin: 1rem;
   display: block;
 }

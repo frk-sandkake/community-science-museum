@@ -1,11 +1,11 @@
 .primary-header-container {
-  max-height: 7em;
+  max-height: 104px;
+  height: 90%;
 }
 
 .primary-header-container-logo img {
-  max-width: 70%;
-  object-fit: scale-down;
-  object-position: top left;
+  max-width: 180px;
+  width: 60%;
 }
 
 .primary-navigation a {
