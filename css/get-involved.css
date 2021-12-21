@@ -1,66 +1,88 @@
-.main-container-herobanner {
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.918),
-      rgba(37, 37, 37, 0.445)
-    ),
-    url(/images/inside-museum.webp);
-  background-size: fill;
-  background-position: center;
+.main-container {
+  color: var(--clr-2green-900);
+}
+.main-container-heroimg-title {
+  flex-direction: column;
+  margin-bottom: 1.7em;
+  gap: 0;
 }
 
 .main-container-get-involved {
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin: 2rem 0.5rem;
+  gap: 1.5em;
+  margin: auto;
+  width: 95%;
 }
 
 .main-container-get-involved-items {
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
 }
 
 .main-container-get-involved-item {
-  max-width: 450px;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.349);
+  flex-direction: column;
 }
 
-.main-container-get-involved-item h2 {
-  text-align: center;
-  text-transform: uppercase;
+.link-to-contact-us {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0.5em 1em;
+  margin: 1.7em 0;
 }
 
-.background-color1 {
-  background-color: #ebfbff;
+.link-to-contact-us .btn {
+  margin: 0.2em;
 }
 
-.background-color2 {
-  background-color: #a6d78e;
+.bgc-2green-100 {
+  background-color: var(--clr-2green-100);
 }
 
-.background-color3 {
-  background-color: #e587fd;
+@media screen and (min-width: 480px) {
+  .link-to-contact-us {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
-.background-color4 {
-  background-color: #ffebf6;
-}
-
-@media screen and (min-width: 768px) {
-  .main-container-get-involved {
-    gap: 3em;
-    margin: 3rem 0;
+@media screen and (min-width: 700px) {
+  .main-container-heroimg-title {
+    margin-bottom: 2.2em;
   }
 
-  .main-container-get-involved-items {
-    display: flex;
+  .link-to-contact-us {
+    margin: 2em 0;
+  }
+
+  .main-container-get-involved {
+    gap: 2em;
+  }
+
+  .main-container-get-involved-item {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 3em;
+    gap: 1.5em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-container-heroimg-title {
+    margin-bottom: 2.7em;
+  }
+
+  .link-to-contact-us {
+    margin: 2.5em 0;
+  }
+
+  .main-container-get-involved {
+    gap: 2.5em;
+  }
+
+  .main-container-get-involved-item {
+    gap: 2em;
   }
 }
