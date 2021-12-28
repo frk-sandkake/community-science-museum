@@ -30,7 +30,9 @@
             <img
               src="/images/LOGO-brandname-new.svg"
               alt="picture of an Atom and title: Community Science Museum"
-              width="170" height="80"/>
+              width="170"
+              height="80"
+            />
           </a>
         </div>
         <button
@@ -69,29 +71,30 @@
           </header>
           <fieldset class="main-container-fieldset flex">
             <legend><h2>Your Name</h2></legend>
-            <span class="label-input flex">
-              <label for="explicit-label-name">First Name:</label>
-              <input
-                id="first-name"
-                type="text"
-                name="first"
-                placeholder="First Name"
-              />
-            </span>
-            <span class="label-input flex">
-              <label for="last-name">Last Name:</label>
-              <input
-                id="last-name"
-                type="text"
-                name="last"
-                placeholder="Last Name"
-              />
-            </span>
+            <label for="first-name"><h3>First Name:</h3></label>
+            <input
+              id="first-name"
+              type="text"
+              name="first"
+              placeholder="First Name"
+            />
+            <label for="last-name"><h3>Last Name:</h3></label>
+            <input
+              id="last-name"
+              type="text"
+              name="last"
+              placeholder="Last Name"
+            />
           </fieldset>
           <fieldset class="main-container-fieldset flex">
             <legend><h2>How can we help?</h2></legend>
-            <label for="select-topic">Select topic</label>
-            <select name="select" id="select-topic">
+            <label for="select-topic"><h3>Select topic</h3></label>
+            <select
+              id="select-topic"
+              type="select"
+              name="select topic"
+              placeholder="Select topic"
+            >
               <option value="Accessibility">Accessibility</option>
               <option value="Get involved">Get involved</option>
               <option value="Guided tours">Guided tours</option>
@@ -99,7 +102,7 @@
               <option value="Schools">Schools</option>
               <option value="Other">Other</option>
             </select>
-            <label for="txtboxMultiline">Your Message</label>
+            <label for="txtboxMultiline"><h3>Your Message:</h3></label>
             <textarea
               name="message"
               id="txtboxMultiline"
@@ -110,31 +113,30 @@
             ></textarea>
           </fieldset>
           <fieldset class="main-container-fieldset flex">
-            <legend><h2>Contact information</h2></legend>
-            <span class="label-input flex">
-              <label for="email">E-mail:</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="your@email.com"
-              />
-            </span>
-            <span class="label-input flex">
-              <label for="phone-number">Phone:</label>
-              <input
-                id="phone-number"
-                name="phone"
-                type="phone-number"
-                placeholder="+47 456 78 901"
-              />
-            </span>
-            <span class="label-input datetime flex">
-              <label for="date-time">Select date&time:</label>
-              <input id="date-time" name="date-time" type="datetime-local" />
-            </span>
+            <legend><h2>Contact info</h2></legend>
+            <label for="email"><h3>E-mail:</h3></label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+            />
+            <label for="phone-number"><h3>Phone:</h3></label>
+            <input
+              id="phone-number"
+              name="phone"
+              type="tel"
+              placeholder="+47 456 78 901"
+            />
+            <label for="date-time"><h3>Select date&time:</h3></label>
+            <input id="date-time" name="date-time" type="datetime-local" />
           </fieldset>
-          <input id="submit" type="submit" class="btn btn-grad-teal" value="Send" />
+          <input
+            id="submit"
+            type="submit"
+            class="btn btn-grad-teal"
+            value="Send"
+          />
         </form>
       </div>
     </main>
@@ -147,21 +149,29 @@
               <details>
                 <summary><h3>ADMISSION</h3></summary>
                 <p>
-                  The entrance is free for all! Guided tours are 70NOK per person.
-                  Meet up in reception to join. Just missed one, don’t worry they
-                  leave every whole hour. Send us a message for groups of 6 people or more.
+                  The entrance is free for all! Guided tours are 70NOK per
+                  person. Meet up in reception to join. Just missed one, don’t
+                  worry they leave every whole hour. Send us a message for
+                  groups of 6 people or more.
                 </p>
                 <a class="btn btn-grad-teal text-center" href="contact-us.html">
-                  Contact us <span class="sr-only">for guided tours of 6 people or more people</span>>
+                  Contact us
+                  <span class="sr-only"
+                    >for guided tours of 6 people or more people</span
+                  >>
                 </a>
               </details>
               <details>
                 <summary><h3>ACCESSIBILITY</h3></summary>
                 <p>
-                  The museum has wheelchair accessibility ramps. It also has audio
-                  guides and braille display signs for the visually impaired.
-                  <a class="btn btn-grad-teal text-center" href="contact-us.html"
-                    >Other needs or questions? <span class="sr-only">send us a message</span></a
+                  The museum has wheelchair accessibility ramps. It also has
+                  audio guides and braille display signs for the visually
+                  impaired.
+                  <a
+                    class="btn btn-grad-teal text-center"
+                    href="contact-us.html"
+                    >Other needs or questions?
+                    <span class="sr-only">send us a message</span></a
                   >
                 </p>
               </details>
@@ -175,41 +185,65 @@
               <details>
                 <summary><h3>SHOP</h3></summary>
                 <p>
-                  Our shop offers a range of memorabilia from the museum as well as
-                  great gifts and activity packs that allow you to continue to
-                  explore science even after you’ve left the museum.
+                  Our shop offers a range of memorabilia from the museum as well
+                  as great gifts and activity packs that allow you to continue
+                  to explore science even after you’ve left the museum.
                 </p>
               </details>
-            </section>            
-          <section class="footer-container-visit-us-item-hours-location flex" aria-label="hours-location">
-            <div class="hours">
-              <h3>Opening Hours</h3>
-              <p>Closed on Mondays <br /> Open Tuesday-Sunday: <time>10</time> - <time>19</time> </p>
-            </div>
-            <div class="location flex">
-              <header>
-                <h3>Location</h3>
-                <address>Olaf Helsets vei 5, <br /> 0694 Oslo </address>
-              </header>
-              <div>
-                <iframe aria-label="i-frame" alt="frame for google-maps and link to location of community science museum" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.912386165172!2d10.840128366094092!3d59.86720093185027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50c313cea7%3A0x124afd6cee4553b0!2sOlaf%20Helsets%20vei%205%2C%200694%20Oslo!5e0!3m2!1ssv!2sno!4v1639937420511!5m2!1ssv!2sno" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section
+              class="footer-container-visit-us-item-hours-location flex"
+              aria-label="hours-location"
+            >
+              <div class="hours">
+                <h3>Opening Hours</h3>
+                <p>
+                  Closed on Mondays <br />
+                  Open Tuesday-Sunday: <time>10</time> - <time>19</time>
+                </p>
               </div>
-            </div>
+              <div class="location flex">
+                <header>
+                  <h3>Location</h3>
+                  <address>
+                    Olaf Helsets vei 5, <br />
+                    0694 Oslo
+                  </address>
+                </header>
+                <div>
+                  <iframe
+                    aria-label="i-frame"
+                    alt="frame for google-maps and link to location of community science museum"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.912386165172!2d10.840128366094092!3d59.86720093185027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50c313cea7%3A0x124afd6cee4553b0!2sOlaf%20Helsets%20vei%205%2C%200694%20Oslo!5e0!3m2!1ssv!2sno!4v1639937420511!5m2!1ssv!2sno"
+                    width="100"
+                    height="100"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </section>
           </section>
-         </section>
         </article>
         <section class="logo-copyright flex">
           <a href="index.html" aria-label="logo and brand name">
-            <img 
-            src="/images/LOGO-brandname-new.svg" 
-            alt="picture of an Atom and title: Community Science Museum"
-            width="170" height="80"/>
+            <img
+              src="/images/LOGO-brandname-new.svg"
+              alt="picture of an Atom and title: Community Science Museum"
+              width="170"
+              height="80"
+            />
           </a>
-          <small>©2021 frkSandkake <br/> Educational use only! <br/> PhotoCredit: <br/> <a href="https://unsplash.com/">Unsplash</a> & <a href="https://www.pexels.com/">Pexels</a></small> 
+          <small
+            >©2021 frkSandkake <br />
+            Educational use only! <br />
+            PhotoCredit: <br />
+            <a href="https://unsplash.com/">Unsplash</a> &
+            <a href="https://www.pexels.com/">Pexels</a></small
+          >
         </section>
       </div>
     </footer>
-  </body>
-</html>
   </body>
 </html>

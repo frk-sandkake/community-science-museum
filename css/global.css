@@ -72,20 +72,20 @@ h1,
 h2,
 h3 {
   font-family: var(--h1-h5-font);
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
   letter-spacing: 0.099em;
 }
 
 h1 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 2.5rem;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -107,6 +107,10 @@ address {
   max-width: 65ch;
 }
 
+a {
+  text-decoration: none;
+}
+
 a,
 button,
 .btn,
@@ -126,7 +130,7 @@ img {
   display: block;
 }
 
-@media screen and (mix-width: 600px) {
+@media screen and (max-width: 600px) {
   p {
     font-size: var(--text-lrg);
     font-weight: 500;
@@ -137,7 +141,7 @@ img {
   button,
   .btn,
   summary {
-    font-size: var(--text-lx);
+    font-size: var(--text-xl);
     font-weight: 500;
   }
 }
@@ -152,6 +156,21 @@ li {
 
 ul {
   margin: 0;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #e587fd;
+}
+
+a:hover,
+a:focus,
+a:active,
+summary:hover,
+summary:focus,
+summary:active {
+  text-decoration: underline;
+  color: var(--clr-2orange-500);
 }
 
 .btn {
@@ -188,21 +207,6 @@ ul {
 }
 .box-shadow2 {
   box-shadow: 0 4px 5px rgba(29, 29, 29, 0.342);
-}
-
-/*a:visited {
-  text-decoration: underline;
-  color: #e587fd;
-}*/
-
-a:hover,
-a:focus,
-a:active,
-summary:hover,
-summary:focus,
-summary:active {
-  text-decoration: underline;
-  color: var(--clr-2orange-500);
 }
 
 .container {

@@ -1,5 +1,5 @@
 .main-container-herobanner {
-  height: 25vh;
+  height: 50vh;
 }
 
 .main-container-herobanner-content {
@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 600px) {
   .main-container-herobanner {
-    height: 30vh;
+    height: 70vh;
   }
 
   .main-container-herobanner-subtitle {
