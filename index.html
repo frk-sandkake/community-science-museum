@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="Home page for Community Science Museum, Oslo. Over 1000 exhibitions in Cosmology, Evolution, Biology and Medicine, Robotics and AI and Ecology. Check out new events and exhibitions. Guided tours, special clubs for young people, contact us for arrangements for your school. Donate, volunteer, internship."
@@ -19,34 +19,32 @@
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/hero-banner.css">
-    <link rel="stylesheet" href="/css/sticky-nav.css">
     <link rel="stylesheet" href="/css/index.css" />
     <title>Home page | Community Science Museum</title>
     <script src="script.js" defer></script>
   </head>
   <body>
     <header id="to-top" class="primary-header-container">
-      <div class="container">
+      <div class="container flex-header">
           <div class="primary-header-container-logo">
             <a href="index.html" aria-label="logo and brand name">
               <img 
-              src="/images/LOGO-brandname-new.svg" 
+              src="/images/logo-brandname-new.svg"
               alt="picture of an Atom and title: Community Science Museum"
               width="170" height="80"/>
             </a>
           </div>
-            <button
-              class="nav-toggle"
-              aria-controls="primary-navigation" aria-expanded="false">
-              <span class="sr-only">Menu</span>
+            <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#f36b20"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+                <span class="sr-only">Menu</span>
             </button>
             <nav aria-label="primary navigation">
               <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="active text-center"><a href="index.html">HOME</a></li>
-                <li class="text-center"><a href="special-events.html">SPECIAL EVENTS</a></li>
+                <li class="text-center"><a href="special-events.html">EVENTS</a></li>
                 <li class="text-center"><a href="exhibitions.html">EXHIBITIONS</a></li>
-                <li class="text-center"><a href="get-involved.html">GET INVOLVED</a></li>
-                <li class="text-center"><a href="contact-us.html">CONTACT US</a></li>
+                <li class="text-center"><a href="get-involved.html">INVOLVED</a></li>
+                <li class="text-center"><a href="contact-us.html">CONTACT</a></li>
               </ul>
             </nav>
       </div>
@@ -64,17 +62,6 @@
             </p>
           </header>
         </section>
-        <nav aria-label="page navigation" class="main-container-page-nav flex">
-          <ul class="main-container-page-nav-ul flex">
-            <li class="text-center"><a href="#news">News</a></li>
-            <li class="text-center"><a href="#kids">Kids</a></li>
-            <li class="text-center"><a href="#schools">Schools</a></li> 
-            <li class="text-center"><a href="#exhibitions">Exhibitions</a></li>
-            <li class="text-center"><a href="#get-involved">Get Involved</a></li>
-            <li class="text-center"><a href="#visit-us">Visit us</a></li>
-            <li class="text-center"><a href="#top">back to top</a></li>
-          </ul>
-        </nav>
         <section id="news" class="main-container-news flex text-center">
           <h2>Don't miss out!</h2>
           <div class="main-container-news-cards flex">
@@ -97,9 +84,9 @@
               </p>
             </div>
           </div>
-          <a href="special-events.html" class="btn btn-green text-center"
-            >Get to our special events</a
-          >
+          <a href="special-events.html" class="text-link text-center">
+              Get to our special events
+          </a>
         </section>
         <article id="kids" class="main-container-kids flex">
           <div class="main-container-kids-item image box-shadow flex">
@@ -139,8 +126,9 @@
             <p>
               We have created a place to <strong> Explore Science </strong> for school students of <em> all ages</em>. <br/> <br/> Let our experienced team lead your students through the Science World in inspiring and funny ways. <br/> <br/> Don't wait, lets plan your next visit today!
             </p>
-            <a href="contact-us.html" class="btn btn-grad-blue-green text-center"
-              >Contact us!<span class="sr-only">about planing your school trip</span></a>
+            <a href="contact-us.html" class="text-link text-center">
+                Contact us!
+                <span class="sr-only">about planing your school trip</span>'
             </a>
           </div>
         </article>
@@ -159,7 +147,7 @@
               <img 
               src="/images/robot-vehicle.webp" 
               alt="Picture of robot vehicles"
-              width="323" height="279">
+              width="320" height="279">
               </div>
             <div id="ecology" class="card-content">
               <h3>Ecology</h3>
@@ -177,11 +165,11 @@
             </div>
             <div id="cosmology" class="card-content">
               <h3>Cosmology</h3>
-              <img src="/images/cosmology-space-pink.webp" alt="A picture of outer space with lots of bold colors" width="323" height="279">
+              <img src="/images/cosmology-space-pink.webp" alt="A picture of outer space with lots of bold colors" width="322" height="279">
             </div>
             <div class="card-text flex text.center">
               <p><strong>Over 1000 exhibits, so much to do!</strong></p>
-              <a href="exhibitions.html" class="btn btn-grad-teal">See more!<span class="sr-only">about our exhibitions</span></a>
+              <a href="exhibitions.html" class="text-link">See more!<span class="sr-only">about our exhibitions</span></a>
             </div>
           </section>
         </article>
@@ -195,10 +183,10 @@
               Or maybe you would like to try out working here? We also have a lot
               to offer for researchers and academics.
             </p>
-            <a class="text-center" href="get-involved.html"
-              >Read more!
-              <span class="sr-only">about how to get involved</span></a
-            >
+            <a class="text-link text-center" href="get-involved.html">
+                Read more!
+              <span class="sr-only">about how to get involved</span>
+            </a>
           </section>
         </article>
       </div>
@@ -216,7 +204,7 @@
                   Meet up in reception to join. Just missed one, don’t worry they
                   leave every whole hour. Send us a message for groups of 6 people or more.
                 </p>
-                <a class="btn btn-grad-teal text-center" href="contact-us.html">
+                <a class="text-link text-center" href="contact-us.html">
                   Contact us <span class="sr-only">for guided tours of 6 people or more people</span>>
                 </a>
               </details>
@@ -225,9 +213,9 @@
                 <p>
                   The museum has wheelchair accessibility ramps. It also has audio
                   guides and braille display signs for the visually impaired.
-                  <a class="btn btn-grad-teal text-center" href="contact-us.html"
-                    >Other needs or questions? <span class="sr-only">send us a message</span></a
-                  >
+                  <a class="text-link text-center" href="contact-us.html">
+                      Other needs or questions? <span class="sr-only">send us a message</span>
+                  </a>
                 </p>
               </details>
               <details>
@@ -256,9 +244,6 @@
                 <h3>Location</h3>
                 <address>Olaf Helsets vei 5, <br /> 0694 Oslo </address>
               </header>
-              <div>
-                <iframe aria-label="i-frame" alt="frame for google-maps and link to location of community science museum" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.912386165172!2d10.840128366094092!3d59.86720093185027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50c313cea7%3A0x124afd6cee4553b0!2sOlaf%20Helsets%20vei%205%2C%200694%20Oslo!5e0!3m2!1ssv!2sno!4v1639937420511!5m2!1ssv!2sno" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              </div>
             </div>
             </section>
           </section>
@@ -266,7 +251,7 @@
         <section class="logo-copyright flex">
           <a href="index.html" aria-label="logo and brand name">
             <img 
-            src="/images/LOGO-brandname-new.svg" 
+            src="/images/logo-brandname-new.svg"
             alt="picture of an Atom and title: Community Science Museum"
             width="170" height="80"/>
           </a>

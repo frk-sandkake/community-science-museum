@@ -3,8 +3,8 @@ const navToggle = document.querySelector(".nav-toggle");
 
 navToggle.addEventListener("click", () => {
 
-    const visiblity = nav.getAttribute("data-visible");
-    if (visiblity === "false") {
+    const visibility = nav.getAttribute("data-visible");
+    if (visibility === "false") {
         nav.setAttribute("data-visible", true);
         navToggle.setAttribute("aria-expanded", true);
     } else {

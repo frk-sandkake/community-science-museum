@@ -12,6 +12,15 @@
   color: var(--clr-1blue-100);
 }
 
+.main-container-herobanner-content img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
 .main-container-herobanner-subtitle {
   font-family: var(--link-btn-label-font);
   font-size: var(--text-lrg);
