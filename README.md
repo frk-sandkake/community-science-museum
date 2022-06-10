@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b90091bf-5a64-475d-ba8d-aa91a95700bb/deploy-status)](https://app.netlify.com/sites/squareeyes-c53e51/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3e4244fa-65a5-47bb-a419-4af4700a261d/deploy-status)](https://app.netlify.com/sites/fervent-blackwell-3e5b80/deploys)
 ![CodeFactory](https://img.shields.io/codefactor/grade/github/lindamsandaker/community-science-museum/main)
 
 <!-- PROJECT LOGO -->
@@ -42,7 +42,8 @@ Semester project year 1, Front-end Development, Noroff VOC Oslo.
 
 Make a website for the new Science Museum in town.
 
-Language used; HTML and CSS, only Javascript is for hamburger menu.
+### Language; 
+HTML and CSS, Javascript only for toggle nav menu. No framework allowed. 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
